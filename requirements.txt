@@ -1,0 +1,4 @@
+openai
+SpeechRecognition
+pygame
+requests
