@@ -1,12 +1,17 @@
 import openai
 import speech_recognition as sr
 from google.cloud import texttospeech
+from dotenv import load_dotenv
 import pygame
 import io
 import threading
 import os
 import requests
 import datetime
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("openai.api_key")
 
 pygame.mixer.init()
 
