@@ -3,3 +3,4 @@ SpeechRecognition
 pygame
 requests
 python-dotenv
+pyaudio
