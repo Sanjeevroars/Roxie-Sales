@@ -1,6 +1,5 @@
-import openai
 import speech_recognition as sr
-from google.cloud import texttospeech
+from openai import OpenAI
 import pygame
 import io
 import threading
@@ -8,16 +7,15 @@ import os
 import requests
 import datetime
 from pymongo import MongoClient
-
-# OpenAI API key
-openai.api_key = ''
+from dotenv import load_dotenv
 
 # Initialize pygame mixer
 pygame.mixer.init()
 
-# Set up Google Cloud Text-to-Speech client
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ""
-tts_client = texttospeech.TextToSpeechClient()
+# Load environment variables
+load_dotenv()
+ROXIE_API_KEY = os.getenv("Roxie.api_key")
+OPENAI_API_KEY = os.getenv("openai.api_key")
 
 # Define a constant for the location
 LOCATION = "Chennai, India"
@@ -64,7 +62,9 @@ def chat_with_gpt(conversation_history):
         {"role": "user", "content": prompt}
     ]
     
-    response = openai.ChatCompletion.create(
+    client = OpenAI(api_key=OPENAI_API_KEY)
+
+    response = client.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=messages,
         max_tokens=250,
@@ -73,25 +73,22 @@ def chat_with_gpt(conversation_history):
     return response.choices[0].message['content'].strip()
 
 def text_to_speech(text):
-    """Convert text to speech and play it."""
-    input_text = texttospeech.SynthesisInput(text=text)
-    voice = texttospeech.VoiceSelectionParams(
-        language_code="en-US", 
-        ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
-    )
-    audio_config = texttospeech.AudioConfig(audio_encoding=texttospeech.AudioEncoding.MP3)
+    """Convert text to speech and play it using OpenAI TTS."""
+    client = OpenAI(api_key=ROXIE_API_KEY)
 
-    response = tts_client.synthesize_speech(
-        input=input_text, 
-        voice=voice, 
-        audio_config=audio_config
+    response = client.audio.speech.create(
+        model="tts-1",
+        voice="shimmer",
+        input=text
     )
 
-    audio_fp = io.BytesIO(response.audio_content)
+    audio_data = response.content
+    audio_fp = io.BytesIO(audio_data)
     audio_fp.seek(0)
     
     pygame.mixer.music.load(audio_fp, 'mp3')
     pygame.mixer.music.play()
+    
     while pygame.mixer.music.get_busy():
         pygame.time.Clock().tick(10)
 
@@ -102,7 +99,7 @@ def get_initial_details(memory):
         update_transcript(f"User: {memory['name']}")
     if "contact" not in memory:
         memory["contact"] = speech_to_text("What is your contact number?")
-        update_transcript(f"Contact: {memory['contact']}")
+        update_transcript(f"My contact number is {memory['contact']}")
     return memory
 
 def book_appointment(memory):
@@ -116,12 +113,7 @@ def book_appointment(memory):
 def ask_model_interest(memory):
     """Ask the user about the model they're interested in."""
     model = speech_to_text("Which particular model are you interested in?")
-    if model:
-        update_transcript(f"User: Interested in model {model}")
-        check_model_availability(model, memory)
-    else:
-        text_to_speech("Sorry, I didn't catch that. Could you please repeat the model name?")
-        ask_model_interest(memory)
+    update_transcript(f"User is interested in: {model}")
     return model
 
 def check_model_availability(model, memory):
@@ -176,7 +168,7 @@ def main():
     conversation_history = []
 
     memory = get_initial_details(memory)
-    conversation_history.append(f"User: My name is {memory['name']} and my contact detail is : {memory['contact']}.")
+    conversation_history.append(f"User: My name is {memory['name']} and my contact number is {memory['contact']}.")
 
     print("Assistant: How can I assist you today?")
     text_to_speech("How can I assist you today?")
@@ -201,6 +193,7 @@ def main():
                 model_interest = ask_model_interest(memory)
                 print(f"Assistant: Great Choice! Your interest in {model_interest} has been noted.")
                 text_to_speech(f"Great Choice! Your interest in {model_interest} has been noted.")
+                update_transcript(f"Assistant: You are interested in: {model_interest}")
                 continue
             if user_input:
                 update_transcript(f"User: {user_input}")
