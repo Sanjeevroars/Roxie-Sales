@@ -16,7 +16,7 @@ except Exception as e:
     print(e)
 
 # Select the database and collection
-db = client["client_database"]
+db = client["client_info"]
 model_list = db["client_models"]
 
 # Sample data for car models and their variants
