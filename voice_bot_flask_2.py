@@ -70,7 +70,7 @@ def chat_with_gpt(conversation_history):
         max_tokens=250,
         temperature=0.9
     )
-    return response.choices[0].message
+    return response.choices[0].message.content
 
 def text_to_speech(text):
     """Convert text to speech and play it using OpenAI TTS."""
