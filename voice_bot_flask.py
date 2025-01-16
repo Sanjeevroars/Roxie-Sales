@@ -57,9 +57,14 @@ def speech_to_text(prompt=None):
 
 def chat_with_gpt(conversation_history):
     """Get a response from GPT-3.5 based on the conversation history."""
-    prompt = f"{document_content}\n\n{conversation_history[-1]}"
+    prompt = (
+        f"{document_content}\n\n"
+        f"You are a helpful sales assistant. Always keep responses short and to the point. "
+        f"Provide concise and relevant answers based on the conversation context.\n\n"
+        f"{conversation_history[-1]}"
+    )
     messages = [
-        {"role": "system", "content": "You are a helpful sales assistant."},
+        {"role": "system", "content": "You are a helpful sales assistant. Your responses must be concise, no more than 2-3 sentences."},
         {"role": "user", "content": prompt}
     ]
     
@@ -71,7 +76,7 @@ def chat_with_gpt(conversation_history):
         max_tokens=250,
         temperature=0.9
     )
-    return response.choices[0].message.content
+    return response.choices[0].message.content.strip()
 
 def text_to_speech(text):
     """Convert text to speech and play it using OpenAI TTS."""
