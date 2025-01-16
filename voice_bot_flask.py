@@ -23,7 +23,7 @@ LOCATION = "Chennai, India"
 # MongoDB setup - replace with your actual MongoDB connection string
 MONGO_URI = os.getenv("mongoDB.uri")
 client = MongoClient(MONGO_URI)
-db = client["client_database"]
+db = client["client_info"]
 client_collection = db["client_models"]
 
 def load_document(file_path):
