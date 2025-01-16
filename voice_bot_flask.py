@@ -1,6 +1,7 @@
 import openai
 import speech_recognition as sr
-from google.cloud import texttospeech
+# from google.cloud import texttospeech
+from openai import OpenAI
 from dotenv import load_dotenv
 import pygame
 import io
@@ -16,8 +17,8 @@ ROXIE_API_KEY = os.getenv("Roxie.api_key")
 
 pygame.mixer.init()
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "googlecloudvoicetts.json"
-tts_client = texttospeech.TextToSpeechClient()
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "googlecloudvoicetts.json"
+# tts_client = texttospeech.TextToSpeechClient()
 
 LOCATION = "Chennai, India"
 
@@ -61,13 +62,22 @@ def chat_with_gpt(conversation_history):
     return response.choices[0].message['content'].strip()
 
 def text_to_speech(text):
-    input_text = texttospeech.SynthesisInput(text=text)
-    voice = texttospeech.VoiceSelectionParams(language_code="en-US", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL)
-    audio_config = texttospeech.AudioConfig(audio_encoding=texttospeech.AudioEncoding.MP3)
+    # input_text = texttospeech.SynthesisInput(text=text)
+    # voice = texttospeech.VoiceSelectionParams(language_code="en-US", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL)
+    # audio_config = texttospeech.AudioConfig(audio_encoding=texttospeech.AudioEncoding.MP3)
 
-    response = tts_client.synthesize_speech(input=input_text, voice=voice, audio_config=audio_config)
+    # response = tts_client.synthesize_speech(input=input_text, voice=voice, audio_config=audio_config)
+    
+    client = OpenAI(api_key=ROXIE_API_KEY)
 
-    audio_fp = io.BytesIO(response.audio_content)
+    response = client.audio.speech.create(
+        model="tts-1",
+        voice="alloy",
+        input=text
+    )
+
+    audio_data = response.content
+    audio_fp = io.BytesIO(audio_data)
     audio_fp.seek(0)
     
     pygame.mixer.music.load(audio_fp, 'mp3')
