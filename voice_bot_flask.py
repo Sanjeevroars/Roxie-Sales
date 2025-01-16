@@ -4,7 +4,6 @@ import pygame
 import io
 import threading
 import os
-import re
 import requests
 import datetime
 from pymongo import MongoClient
@@ -44,7 +43,7 @@ def speech_to_text(prompt=None):
             print(f"Assistant: {prompt}")
             text_to_speech(prompt)
         print("Speak now...")
-        audio = recognizer.listen(source)
+        audio = recognizer.listen(source=source)
     try:
         text = recognizer.recognize_google(audio)
         if prompt == "What is your contact number?":
@@ -84,33 +83,62 @@ def chat_with_gpt(conversation_history):
     )
     return response.choices[0].message.content.strip()
 
-def text_to_speech(text):
-    """Convert text to speech and play it using OpenAI TTS."""
-    client = OpenAI(api_key=ROXIE_API_KEY)
-
-    response = client.audio.speech.create(
-        model="tts-1",
-        voice="shimmer",
-        input=text
-    )
-
-    audio_data = response.content
-    audio_fp = io.BytesIO(audio_data)
-    audio_fp.seek(0)
-    
-    pygame.mixer.music.load(audio_fp, 'mp3')
+def play_tts_offline(file_path):
+    pygame.mixer.music.load(file_path)
     pygame.mixer.music.play()
-    
+
     while pygame.mixer.music.get_busy():
         pygame.time.Clock().tick(10)
 
+def text_to_speech(text):
+    prompt_to_mp3 = {
+        "What is your name?": os.path.join("assets", "whatIsYourName.mp3"),
+        "What is your contact number?": os.path.join("assets", "whatContactNum.mp3"),
+        "How can I assist you today?": os.path.join("assets", "howCanIAssist.mp3"),
+        "I'm sorry, I can only assist with questions related to our company's services.": os.path.join("assets", "companyServices.mp3"),
+        "The contact number you provided is invalid. Please provide JUST the valid contact number.": os.path.join("assets", "JUSTcontact.mp3"),
+        "What date would you like to book the appointment?": os.path.join("assets", "whatDayBook.mp3"),
+        "Our Sales team will contact you shortly.": os.path.join("assets", "salesTeamContact.mp3"),
+        "Which particular model are you interested in?": os.path.join("assets", "whichModelYouInterestedIn.mp3"),
+        "Roxie is always available. Have a great day!": os.path.join("assets", "alwaysAvailable.mp3")
+    }
+
+
+    if text in prompt_to_mp3:
+        mp3_file = prompt_to_mp3[text]
+        play_tts_offline(mp3_file)
+
+    else:
+        """Convert text to speech and play it using OpenAI TTS."""
+        client = OpenAI(api_key=ROXIE_API_KEY)
+
+        response = client.audio.speech.create(
+            model="tts-1",
+            voice="shimmer",
+            input=text
+        )
+
+        audio_data = response.content
+        audio_fp = io.BytesIO(audio_data)
+        audio_fp.seek(0)
+        
+        pygame.mixer.music.load(audio_fp, 'mp3')
+        pygame.mixer.music.play()
+        
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
+
 def validate_contact_number(contact):
+    if not contact:
+        return None
     cleaned_contact = contact.replace(" ", "")
     
     if cleaned_contact.isdigit() and len(cleaned_contact) == 10:
         return cleaned_contact
     else:
+        print("Error: Invalid contact number.")
         return None
+
 
 def get_initial_details(memory):
     """Get user's initial details."""
