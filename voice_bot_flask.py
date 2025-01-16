@@ -50,7 +50,7 @@ def speech_to_text(prompt=None):
         return text
     except sr.UnknownValueError:
         print("Sorry, I did not understand that.")
-        return ""
+        speech_to_text(prompt=prompt)
     except sr.RequestError:
         print("Request error from Google Speech Recognition service.")
         return ""
