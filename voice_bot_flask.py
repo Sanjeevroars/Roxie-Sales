@@ -38,6 +38,7 @@ def speech_to_text(prompt=None):
     """Convert speech to text."""
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
+        recognizer.adjust_for_ambient_noise(source=source)
         if prompt:
             print(f"Assistant: {prompt}")
             text_to_speech(prompt)
