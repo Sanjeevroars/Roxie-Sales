@@ -64,7 +64,7 @@ def chat_with_gpt(conversation_history):
     
     client = OpenAI(api_key=OPENAI_API_KEY)
 
-    response = client.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=messages,
         max_tokens=250,
