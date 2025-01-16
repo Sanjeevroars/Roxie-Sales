@@ -1,5 +1,6 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import os
 
 # Replace <password> with your actual password
 uri = os.getenv("mongoDB.uri")
