@@ -4,3 +4,4 @@ pygame
 requests
 python-dotenv
 pyaudio
+pymongo
