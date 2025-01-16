@@ -4,6 +4,7 @@ import pygame
 import io
 import threading
 import os
+import re
 import requests
 import datetime
 from pymongo import MongoClient
@@ -46,6 +47,11 @@ def speech_to_text(prompt=None):
         audio = recognizer.listen(source)
     try:
         text = recognizer.recognize_google(audio)
+        if prompt == "What is your contact number?":
+            cleaned_contact = validate_contact_number(text)
+            if cleaned_contact:
+                print(f"You said: {cleaned_contact}")
+                return cleaned_contact
         print(f"You said: {text}")
         return text
     except sr.UnknownValueError:
@@ -98,14 +104,29 @@ def text_to_speech(text):
     while pygame.mixer.music.get_busy():
         pygame.time.Clock().tick(10)
 
+def validate_contact_number(contact):
+    cleaned_contact = contact.replace(" ", "")
+    
+    if cleaned_contact.isdigit() and len(cleaned_contact) == 10:
+        return cleaned_contact
+    else:
+        return None
+
 def get_initial_details(memory):
     """Get user's initial details."""
     if "name" not in memory:
         memory["name"] = speech_to_text("What is your name?")
         update_transcript(f"User: {memory['name']}")
     if "contact" not in memory:
-        memory["contact"] = speech_to_text("What is your contact number?")
-        update_transcript(f"My contact number is {memory['contact']}")
+        contact = speech_to_text("What is your contact number?")
+        cleaned_contact = validate_contact_number(contact)
+        if cleaned_contact:
+            memory["contact"] = cleaned_contact
+            update_transcript(f"My contact number is {memory['contact']}")
+        else:
+            print("Assistant: The contact number you provided is invalid. Please provide JUST the valid contact number.")
+            text_to_speech("The contact number you provided is invalid. Please provide JUST the valid contact number.")
+            memory = get_initial_details(memory)
     return memory
 
 def book_appointment(memory):
