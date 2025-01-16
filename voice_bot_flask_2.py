@@ -21,7 +21,7 @@ OPENAI_API_KEY = os.getenv("openai.api_key")
 LOCATION = "Chennai, India"
 
 # MongoDB setup - replace with your actual MongoDB connection string
-MONGO_URI = ""
+MONGO_URI = os.getenv("mongoDB.uri")
 client = MongoClient(MONGO_URI)
 db = client["client_database"]
 client_collection = db["client_models"]
