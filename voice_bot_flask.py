@@ -12,6 +12,7 @@ import datetime
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("openai.api_key")
+ROXIE_API_KEY = os.getenv("Roxie.api_key")
 
 pygame.mixer.init()
 
