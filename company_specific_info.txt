@@ -1,0 +1,124 @@
+### 1. Toyota Corolla
+Starting Price: ₹15,00,000
+
+Variants and Prices:
+- Corolla L: ₹15,00,000
+- Corolla LE: ₹15,50,000
+- Corolla SE: ₹16,00,000
+- Corolla XLE: ₹18,00,000
+- Corolla XSE: ₹20,00,000
+
+Key Features of Toyota Corolla:
+-  1.8L 4-cylinder, 2.0L 4-cylinder
+-  Continuously Variable Transmission (CVT)
+-  Up to 31 mpg city / 40 mpg highway
+-  Pre-Collision System, Lane Departure Alert, Dynamic Radar Cruise Control
+-  8-inch touchscreen display, Apple CarPlay®, Android Auto™, Amazon Alexa compatibility
+-  Available SofTex®-trimmed seats, moonroof, dual-zone automatic climate control
+
+Comparable Features Between Variants of Toyota Corolla:
+- Corolla L: Basic features including 7-inch touchscreen, standard safety features
+- Corolla LE: Adds automatic climate control, larger touchscreen
+- Corolla SE: Sportier design, paddle shifters, sport seats
+- Corolla XLE: Leather-trimmed seats, upgraded infotainment, additional safety features
+- Corolla XSE: Combines sportiness of SE with luxury features of XLE
+
+### 2. Toyota Camry
+Starting Price: ₹45,25,000
+
+Variants and Prices:
+- Camry LE: ₹45,25,000
+- Camry SE: ₹46,00,000
+- Camry XLE: ₹48,50,000
+- Camry XSE: ₹50,00,000
+- Camry TRD: ₹51,50,000
+
+Key Features of Toyota Camry:
+-  2.5L 4-cylinder, 3.5L V6
+-  8-speed automatic transmission
+-  Up to 28 mpg city / 39 mpg highway
+-  Toyota Safety Sense™ 2.5+ (Pre-Collision System with Pedestrian Detection, Lane Tracing Assist)
+-  9-inch touchscreen display, JBL® audio system, wireless smartphone charging
+-  Leather-trimmed seats, heated front seats, panoramic glass roof
+
+Comparable Features Between Variants of Toyota Camry:**
+- Camry LE: Standard features including 7-inch touchscreen, fabric seats
+- Camry SE: Sport-tuned suspension, sport seats, and paddle shifters
+- Camry XLE: Leather-trimmed seats, larger touchscreen, premium audio
+- Camry XSE: Sportier design, combined features of SE and XLE
+- Camry TRD: High-performance variant with TRD-tuned suspension, unique styling
+
+### 3. Toyota RAV4
+Starting Price: ₹30,00,000
+
+Variants and Prices:
+- RAV4 LE: ₹30,00,000
+- RAV4 XLE: ₹31,50,000
+- RAV4 XLE Premium: ₹33,00,000
+- RAV4 Adventure: ₹35,00,000
+- RAV4 TRD Off-Road: ₹37,00,000
+
+Key Features of Toyota RAV4:
+-  2.5L 4-cylinder engine
+-  8-speed automatic transmission
+-  Up to 27 mpg city / 35 mpg highway
+-  Toyota Safety Sense™ 2.0 (Pre-Collision System, Lane Departure Alert, Automatic High Beams)
+-  7-inch touchscreen, Apple CarPlay®, Android Auto™, Amazon Alexa compatibility
+-  Available heated front seats, dual-zone automatic climate control, power moonroof
+
+Comparable Features Between Variants of Toyota RAV4:
+- RAV4 LE: Standard features including 7-inch touchscreen, fabric seats
+- RAV4 XLE: Additional features like dual-zone climate control, larger wheels
+- RAV4 XLE Premium: Leather-trimmed seats, power moonroof, premium audio
+- RAV4 Adventure: Enhanced towing capacity, rugged design, roof rails
+- RAV4 TRD Off-Road: Off-road suspension, all-terrain tires, unique styling
+
+### 4. Toyota Highlander
+Starting Price: ₹35,00,000
+
+Variants and Prices:
+- Highlander L: ₹35,00,000
+- Highlander LE: ₹37,00,000
+- Highlander XLE: ₹40,00,000
+- Highlander XSE: ₹42,50,000
+- Highlander Limited: ₹45,00,000
+- Highlander Platinum: ₹48,00,000
+
+Key Features of Toyota Highlander:
+-  3.5L V6 engine
+-  8-speed automatic transmission
+-  Up to 21 mpg city / 29 mpg highway
+-  Toyota Safety Sense™ 2.5+ (Pre-Collision System with Low-Light Pedestrian Detection, Lane Departure Alert with Steering Assist)
+-  12.3-inch touchscreen display, JBL® Premium Audio, Apple CarPlay®, Android Auto™
+-  Leather-trimmed seats, heated and ventilated front seats, panoramic moonroof
+
+Comparable Features Between Variants of Toyota Highlander:
+- Highlander L: Basic features including 8-inch touchscreen, fabric seats
+- Highlander LE: Adds blind-spot monitoring, power liftgate
+- Highlander XLE: Leather-trimmed seats, sunroof, larger touchscreen
+- Highlander XSE: Sportier design, sport-tuned suspension
+- Highlander Limited: Premium audio, heated/ventilated seats, advanced safety features
+- Highlander Platinum: Top-tier features including panoramic moonroof, premium interior
+
+### 5. Toyota Prius
+Starting Price: ₹25,00,000
+
+Variants and Prices:
+- Prius L Eco: ₹25,00,000
+- Prius LE: ₹26,00,000
+- Prius XLE: ₹27,50,000
+- Prius Limited: ₹29,00,000
+
+Key Features of Toyota Prius:
+-  1.8L 4-cylinder hybrid engine
+-  Continuously Variable Transmission (CVT)
+-  Up to 58 mpg city / 53 mpg highway
+-  Toyota Safety Sense™ 2.0 (Pre-Collision System with Pedestrian Detection, Full-Speed Range Dynamic Radar Cruise Control)
+-  7-inch touchscreen display, JBL® Premium Audio, Apple CarPlay®, Amazon Alexa compatibility
+-  Available SofTex®-trimmed heated front seats, Smart Key System with Push Button Start
+
+Comparable Features Between Variants of Toyota Prius:
+- Prius L Eco: Basic features including 6.1-inch touchscreen, fabric seats
+- Prius LE: Adds additional safety features, larger touchscreen
+- Prius XLE: Leather-trimmed seats, upgraded infotainment, premium audio
+- Prius Limited: Top-tier features including advanced navigation, premium interior
