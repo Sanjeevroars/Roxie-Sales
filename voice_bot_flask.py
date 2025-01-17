@@ -137,7 +137,8 @@ def text_to_speech(text):
         "What date would you like to book the appointment?": os.path.join("assets", "whatDayBook.mp3"),
         "Our Sales team will contact you shortly.": os.path.join("assets", "salesTeamContact.mp3"),
         "Which particular model are you interested in?": os.path.join("assets", "whichModelYouInterestedIn.mp3"),
-        "Roxie is always available. Have a great day!": os.path.join("assets", "alwaysAvailable.mp3")
+        "Roxie is always available. Have a great day!": os.path.join("assets", "alwaysAvailable.mp3"),
+        "Our Sales team will contact you shortly. Have a great day!": os.path.join("assets", "haveAgreatDay.mp3")
     }
 
     if text in prompt_to_mp3:
@@ -226,7 +227,7 @@ def book_appointment(memory):
         update_transcript(f"Booking appointment for {memory['name']} @ {LOCATION}.")
 
         # update_transcript(f"Appointment date: {memory['date']}.")
-    return "Our Sales team will contact you shortly."
+    return "Our Sales team will contact you shortly. Have a great day!"
 
 def ask_model_interest(memory):
     """Ask the user about the model they're interested in and check its availability."""
@@ -347,11 +348,7 @@ def main():
                 confirmation_message = book_appointment(memory)
                 print(f"Assistant: {confirmation_message}")
                 text_to_speech(confirmation_message)
-                update_transcript(f"Assistant: {confirmation_message}")   
-                farewell_message = "Roxie is always available. Have a great day!"
-                print(f"Assistant: {farewell_message}")
-                text_to_speech(farewell_message)
-                update_transcript(farewell_message)            
+                update_transcript(f"Assistant: {confirmation_message}")           
                 break
 
             if user_input:
