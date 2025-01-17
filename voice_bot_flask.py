@@ -347,8 +347,12 @@ def main():
                 confirmation_message = book_appointment(memory)
                 print(f"Assistant: {confirmation_message}")
                 text_to_speech(confirmation_message)
-                update_transcript(f"Assistant: {confirmation_message}")                
-                continue
+                update_transcript(f"Assistant: {confirmation_message}")   
+                farewell_message = "Roxie is always available. Have a great day!"
+                print(f"Assistant: {farewell_message}")
+                text_to_speech(farewell_message)
+                update_transcript(farewell_message)            
+                break
 
             if user_input:
                 update_transcript(f"User: {user_input}")
