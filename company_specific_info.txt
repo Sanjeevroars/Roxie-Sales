@@ -1,12 +1,12 @@
 ### 1. Toyota Corolla
-Starting Price: ₹15,00,000
+Starting Price: ₹1500000
 
 Variants and Prices:
-- Corolla L: ₹15,00,000
-- Corolla LE: ₹15,50,000
-- Corolla SE: ₹16,00,000
-- Corolla XLE: ₹18,00,000
-- Corolla XSE: ₹20,00,000
+- Corolla L: ₹1500000
+- Corolla LE: ₹1550000
+- Corolla SE: ₹1600000
+- Corolla XLE: ₹1800000
+- Corolla XSE: ₹2000000
 
 Key Features of Toyota Corolla:
 -  1.8L 4-cylinder, 2.0L 4-cylinder
