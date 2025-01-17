@@ -20,6 +20,9 @@ OPENAI_API_KEY = os.getenv("openai.api_key")
 # Define a constant for the location where appointments are booked.
 LOCATION = "Chennai, India"
 
+ENQUIRIES_DIR = os.path.abspath('enquiries')
+os.makedirs(ENQUIRIES_DIR, exist_ok=True)
+
 # MongoDB setup to store and retrieve client information.
 MONGO_URI = os.getenv("mongoDB.uri")
 client = MongoClient(MONGO_URI)
@@ -303,7 +306,9 @@ def end_conversation(memory):
     user_info = {
         "name": memory.get("name", "Unknown"),
         "contact": memory.get("contact", "Unknown"),
-        "date": datetime.datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+        "date": datetime.datetime.now().strftime("%d-%m-%Y_%H-%M-%S"),
+        "interested_model": memory.get("model", "Not specified"),
+        "location": LOCATION
     }
     try:
         response = requests.post('http://127.0.0.1:5000/api/end_conversation', json={'user_info': user_info})
