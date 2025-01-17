@@ -1,29 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import TranscriptList from './TranscriptList';
-import Transcript from './Transcript';
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [transcripts, setTranscripts] = useState([]);
-  const [selectedTranscript, setSelectedTranscript] = useState(null);
-
-  useEffect(() => {
-    fetch('/api/list_transcripts')
-      .then(response => response.json())
-      .then(data => setTranscripts(data.transcripts));
-  }, []);
-
-  const loadTranscript = (filename) => {
-    fetch(`/api/load_transcript/${filename}`)
-      .then(response => response.json())
-      .then(data => setSelectedTranscript(data.transcript));
-  };
-
   return (
     <div className="App">
-      <h1>Saved Conversation Transcripts</h1>
-      <TranscriptList transcripts={transcripts} onTranscriptClick={loadTranscript} />
-      {selectedTranscript && <Transcript transcript={selectedTranscript} />}
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
