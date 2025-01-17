@@ -221,36 +221,36 @@ def book_appointment(memory):
     str: Confirmation message for the appointment.
     """
     if "date" not in memory:
-        memory["date"] = speech_to_text("What date would you like to book the appointment?")
-        update_transcript(f"Booking appointment for {memory['name']} at {LOCATION} on {memory['date']}.")
-        update_transcript(f"Appointment date: {memory['date']}.")
+        # memory["date"] = speech_to_text("What date would you like to book the appointment?")
+        # update_transcript(f"Booking appointment for {memory['name']} at {LOCATION} on {memory['date']}.")
+        update_transcript(f"Booking appointment for {memory['name']} @ {LOCATION}.")
+
+        # update_transcript(f"Appointment date: {memory['date']}.")
     return "Our Sales team will contact you shortly."
 
 def ask_model_interest(memory):
-    """
-    Ask the user about the model they're interested in.
-
-    Args:
-    memory (dict): User's memory to store the model interest.
-
-    Returns:
-    str: Model name or interest expressed by the user.
-    """
-    model = speech_to_text("Which particular model are you interested in?")
-    update_transcript(f"User is interested in: {model}")
-    return model
+    """Ask the user about the model they're interested in and check its availability."""
+    while True:
+        # Ask the user which model they are interested in
+        model = speech_to_text("Which particular model are you interested in?")
+        if not model:
+            print("Assistant: I didn't catch that. Could you please repeat?")
+            text_to_speech("I didn't catch that. Could you please repeat?")
+            continue
+        
+        # Check if the model is available
+        if check_model_availability(model, memory):
+            update_transcript(f"User is interested in: {model}")
+            memory["model"] = model
+            return model  # Exit loop once a valid model is found
+        else:
+            response = f"The model {model} is not available in our collection. Please choose a different model."
+            print(f"Assistant: {response}")
+            text_to_speech(response)
+            update_transcript(f"Assistant: {response}")
 
 def check_model_availability(model, memory):
-    """
-    Check if the specified model is available in the collection.
-
-    Args:
-    model (str): Model name or alias.
-    memory (dict): User's memory containing relevant information.
-
-    Returns:
-    None: Displays the availability of the model and updates the transcript.
-    """
+    """Check if the specified model is available in the database."""
     car = client_collection.find_one({"$or": [{"model": model}, {"aliases": model}]})
     if car:
         response = f"Great choice! The {model} is available in our collection."
@@ -258,12 +258,9 @@ def check_model_availability(model, memory):
         text_to_speech(response)
         update_transcript(f"Assistant: {response}")
         update_transcript(f"User Interested Model: {model}")
+        return True
     else:
-        response = f"The model {model} is not available. Please choose from our available models."
-        print(f"Assistant: {response}")
-        text_to_speech(response)
-        update_transcript(f"Assistant: {response}")
-        ask_model_interest(memory)
+        return False
 
 def is_relevant_question(user_input):
     """
@@ -337,22 +334,22 @@ def main():
             if user_input.lower() == "exit":
                 break
             if "finish" in user_input.lower():
-                farewell_message = "Roxie is always available. Have a great day!"
+                farewell_message = "Thank You! Roxie is always available. Have a great day!"
                 print(f"Assistant: {farewell_message}")
                 text_to_speech(farewell_message)
                 update_transcript(farewell_message)
                 break
             if user_input.lower() == "book an appointment":
+                model_interest = ask_model_interest(memory)
+                print(f"Assistant: Your interest in {model_interest} has been noted.")
+                text_to_speech(f"Your interest in {model_interest} has been noted.")
+                update_transcript(f"Assistant: You are interested in: {model_interest}")
                 confirmation_message = book_appointment(memory)
                 print(f"Assistant: {confirmation_message}")
                 text_to_speech(confirmation_message)
-                update_transcript(f"Assistant: {confirmation_message}")
-
-                model_interest = ask_model_interest(memory)
-                print(f"Assistant: Great Choice! Your interest in {model_interest} has been noted.")
-                text_to_speech(f"Great Choice! Your interest in {model_interest} has been noted.")
-                update_transcript(f"Assistant: You are interested in: {model_interest}")
+                update_transcript(f"Assistant: {confirmation_message}")                
                 continue
+
             if user_input:
                 update_transcript(f"User: {user_input}")
                 if is_relevant_question(user_input):
