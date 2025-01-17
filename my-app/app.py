@@ -10,8 +10,13 @@ current_transcript = []
 # Directory to save transcripts
 TRANSCRIPT_DIR = os.path.abspath('transcripts')
 
+# Directory to save enquiries
+ENQUIRIES_DIR = os.path.abspath('enquiries')
+
 # Ensure the transcript directory exists
 os.makedirs(TRANSCRIPT_DIR, exist_ok=True)
+os.makedirs(ENQUIRIES_DIR, exist_ok=True)
+
 
 # Function to save the current transcript to a file
 def save_transcript(user_info):
@@ -19,6 +24,18 @@ def save_transcript(user_info):
     with open(filename, 'w') as f:
         json.dump({"user_info": user_info, "transcript": current_transcript}, f, indent=4)
     current_transcript.clear()
+
+def save_enquiry(user_info, model, location):
+    enquiry_data = {
+        "name": user_info.get("name"),
+        "contact": user_info.get("contact"),
+        "date": user_info.get("date"),
+        "interested_model": user_info.get("interested_model"),
+        "location": user_info.get("location")
+    }
+    filename = f"{ENQUIRIES_DIR}/{user_info['date']}_{user_info['name']}_enquiry.json"
+    with open(filename, 'w') as f:
+        json.dump(enquiry_data, f, indent=4)
 
 # Route to serve the React app's static files
 @app.route('/')
@@ -44,8 +61,11 @@ def get_transcript():
 @app.route('/api/end_conversation', methods=['POST'])
 def end_conversation():
     user_info = request.json.get('user_info')
+    interested_model = request.json.get('interested_model')
+    location = request.json.get('location', "Unknown")
     if user_info:
         save_transcript(user_info)
+        save_enquiry(user_info, interested_model, location)
         return jsonify({'success': True})
     return jsonify({'success': False}), 400
 
@@ -54,6 +74,23 @@ def end_conversation():
 def list_transcripts():
     transcripts = [filename for filename in os.listdir(TRANSCRIPT_DIR) if filename.endswith('.json')]
     return jsonify({'transcripts': transcripts})
+
+# API to list all saved enquiries
+@app.route('/api/list_enquiries', methods=['GET'])
+def list_enquiries():
+    enquiries = [filename for filename in os.listdir(ENQUIRIES_DIR) if filename.endswith('.json')]
+    return jsonify({'enquiries': enquiries})
+
+
+# API to load a specific enquiry
+@app.route('/api/load_enquiry/<filename>', methods=['GET'])
+def load_enquiry(filename):
+    filepath = os.path.join(ENQUIRIES_DIR, filename)
+    if os.path.exists(filepath):
+        with open(filepath, 'r') as f:
+            enquiry_data = json.load(f)
+        return jsonify({'enquiry': enquiry_data})
+    return jsonify({'error': 'Enquiry not found'}), 404
 
 # API to load a specific transcript
 @app.route('/api/load_transcript/<filename>', methods=['GET'])
