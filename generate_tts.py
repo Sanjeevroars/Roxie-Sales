@@ -34,3 +34,4 @@ def text_to_speech(text, save_dir="assets"):
 # text_to_speech("Our Sales team will contact you shortly.")
 # text_to_speech("Which particular model are you interested in?")
 # text_to_speech("Roxie is always available. Have a great day!")
+# text_to_speech("Our Sales team will contact you shortly. Have a great day!")
