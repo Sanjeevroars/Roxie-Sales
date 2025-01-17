@@ -246,7 +246,7 @@ def main():
                 update_transcript(f"Assistant: {confirmation_message}")
 
                 model_interest = ask_model_interest(memory)
-                print(f"*sigh and then scream and say* Assistant: Great Choice! Your interest in {model_interest} has been noted.")
+                print(f"Assistant: Great Choice! Your interest in {model_interest} has been noted.")
                 text_to_speech(f"Great Choice! Your interest in {model_interest} has been noted.")
                 update_transcript(f"Assistant: You are interested in: {model_interest}")
                 continue
