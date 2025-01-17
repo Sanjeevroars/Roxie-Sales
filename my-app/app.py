@@ -1,6 +1,8 @@
 from flask import Flask, send_from_directory, request, jsonify, render_template
+from pymongo import MongoClient
 import json
 import os
+from dotenv import load_dotenv
 
 app = Flask(__name__, static_folder='build', static_url_path='')
 
@@ -16,6 +18,12 @@ ENQUIRIES_DIR = os.path.abspath('enquiries')
 # Ensure the transcript directory exists
 os.makedirs(TRANSCRIPT_DIR, exist_ok=True)
 os.makedirs(ENQUIRIES_DIR, exist_ok=True)
+
+load_dotenv()
+MONGO_URI = os.getenv("mongoDB.uri")
+client = MongoClient(MONGO_URI)
+db = client["client_info"]
+enquiry_collection = db["enquiry_details"]
 
 
 # Function to save the current transcript to a file
@@ -36,6 +44,8 @@ def save_enquiry(user_info, model, location):
     filename = f"{ENQUIRIES_DIR}/{user_info['date']}_{user_info['name']}_enquiry.json"
     with open(filename, 'w') as f:
         json.dump(enquiry_data, f, indent=4)
+
+    enquiry_collection.insert_one(enquiry_data)
 
 # Route to serve the React app's static files
 @app.route('/')
