@@ -344,7 +344,7 @@ def main():
                 model_interest = ask_model_interest(memory)
                 print(f"Assistant: Your interest in {model_interest} has been noted.")
                 text_to_speech(f"Your interest in {model_interest} has been noted.")
-                update_transcript(f"Assistant: You are interested in: {model_interest}")
+                update_transcript(f"Assistant: You are interested in ->{model_interest}")
                 confirmation_message = book_appointment(memory)
                 print(f"Assistant: {confirmation_message}")
                 text_to_speech(confirmation_message)
