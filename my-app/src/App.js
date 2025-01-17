@@ -1,12 +1,14 @@
-import React from "react";
-import Assistant from "./components/Assistant";
+import React, { useState } from 'react';
+import Chat from './components/Chat';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Assistant />
+    <div className="App">
+      <h1>Roxie Voice Assistant</h1>
+      <Chat />
     </div>
   );
-};
+}
 
 export default App;
