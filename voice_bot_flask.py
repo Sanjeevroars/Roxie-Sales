@@ -9,33 +9,50 @@ import datetime
 from pymongo import MongoClient
 from dotenv import load_dotenv
 
-# Initialize pygame mixer
+# Initialize pygame mixer to handle audio playback.
 pygame.mixer.init()
 
-# Load environment variables
+# Load environment variables from .env file for secure API key management.
 load_dotenv()
 ROXIE_API_KEY = os.getenv("Roxie.api_key")
 OPENAI_API_KEY = os.getenv("openai.api_key")
 
-# Define a constant for the location
+# Define a constant for the location where appointments are booked.
 LOCATION = "Chennai, India"
 
-# MongoDB setup - replace with your actual MongoDB connection string
+# MongoDB setup to store and retrieve client information.
 MONGO_URI = os.getenv("mongoDB.uri")
 client = MongoClient(MONGO_URI)
 db = client["client_info"]
 client_collection = db["client_models"]
 
 def load_document(file_path):
-    """Load document content from a file."""
+    """
+    Load the document content from a specified file.
+
+    Args:
+    file_path (str): Path to the file to be read.
+
+    Returns:
+    str: Contents of the file.
+    """
     with open(file_path, 'r') as file:
         document_content = file.read()
     return document_content
 
+# Load company-specific information from the document for chatbot context.
 document_content = load_document('company_specific_info.txt')
 
 def speech_to_text(prompt=None):
-    """Convert speech to text."""
+    """
+    Convert spoken language to text using Google Speech Recognition API.
+
+    Args:
+    prompt (str): Optional prompt that is played as TTS before recognizing speech.
+
+    Returns:
+    str: Recognized text from the user's speech.
+    """
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         recognizer.adjust_for_ambient_noise(source=source)
@@ -61,7 +78,15 @@ def speech_to_text(prompt=None):
         return ""
 
 def chat_with_gpt(conversation_history):
-    """Get a response from GPT-3.5 based on the conversation history."""
+    """
+    Interact with GPT-3.5 model to generate a relevant response based on the conversation history.
+
+    Args:
+    conversation_history (list): List of conversation exchanges between the assistant and user.
+
+    Returns:
+    str: Generated response from GPT-3.5 model.
+    """
     prompt = (
         f"{document_content}\n\n"
         f"You are a helpful sales assistant. Always keep responses short and to the point. "
@@ -84,6 +109,12 @@ def chat_with_gpt(conversation_history):
     return response.choices[0].message.content.strip()
 
 def play_tts_offline(file_path):
+    """
+    Play an offline TTS file using pygame mixer.
+
+    Args:
+    file_path (str): Path to the MP3 file to be played.
+    """
     pygame.mixer.music.load(file_path)
     pygame.mixer.music.play()
 
@@ -91,6 +122,12 @@ def play_tts_offline(file_path):
         pygame.time.Clock().tick(10)
 
 def text_to_speech(text):
+    """
+    Convert text to speech either from a pre-recorded file or by generating speech via OpenAI API.
+
+    Args:
+    text (str): Text to be converted to speech.
+    """
     prompt_to_mp3 = {
         "What is your name?": os.path.join("assets", "whatIsYourName.mp3"),
         "What is your contact number?": os.path.join("assets", "whatContactNum.mp3"),
@@ -103,13 +140,13 @@ def text_to_speech(text):
         "Roxie is always available. Have a great day!": os.path.join("assets", "alwaysAvailable.mp3")
     }
 
-
     if text in prompt_to_mp3:
         mp3_file = prompt_to_mp3[text]
         play_tts_offline(mp3_file)
-
     else:
-        """Convert text to speech and play it using OpenAI TTS."""
+        """
+        Convert text to speech using OpenAI API and play the generated audio.
+        """
         client = OpenAI(api_key=ROXIE_API_KEY)
 
         response = client.audio.speech.create(
@@ -129,6 +166,15 @@ def text_to_speech(text):
             pygame.time.Clock().tick(10)
 
 def validate_contact_number(contact):
+    """
+    Validate that the provided contact number is a 10-digit number.
+
+    Args:
+    contact (str): Contact number provided by the user.
+
+    Returns:
+    str or None: Validated contact number or None if invalid.
+    """
     if not contact:
         return None
     cleaned_contact = contact.replace(" ", "")
@@ -139,9 +185,16 @@ def validate_contact_number(contact):
         print("Error: Invalid contact number.")
         return None
 
-
 def get_initial_details(memory):
-    """Get user's initial details."""
+    """
+    Gather initial user details such as name and contact number.
+
+    Args:
+    memory (dict): Dictionary to store user information during the interaction.
+
+    Returns:
+    dict: Updated memory with user details.
+    """
     if "name" not in memory:
         memory["name"] = speech_to_text("What is your name?")
         update_transcript(f"User: {memory['name']}")
@@ -158,7 +211,15 @@ def get_initial_details(memory):
     return memory
 
 def book_appointment(memory):
-    """Book an appointment and return a confirmation message."""
+    """
+    Assist the user in booking an appointment.
+
+    Args:
+    memory (dict): User's memory containing relevant information.
+
+    Returns:
+    str: Confirmation message for the appointment.
+    """
     if "date" not in memory:
         memory["date"] = speech_to_text("What date would you like to book the appointment?")
         update_transcript(f"Booking appointment for {memory['name']} at {LOCATION} on {memory['date']}.")
@@ -166,13 +227,30 @@ def book_appointment(memory):
     return "Our Sales team will contact you shortly."
 
 def ask_model_interest(memory):
-    """Ask the user about the model they're interested in."""
+    """
+    Ask the user about the model they're interested in.
+
+    Args:
+    memory (dict): User's memory to store the model interest.
+
+    Returns:
+    str: Model name or interest expressed by the user.
+    """
     model = speech_to_text("Which particular model are you interested in?")
     update_transcript(f"User is interested in: {model}")
     return model
 
 def check_model_availability(model, memory):
-    """Check if the specified model is available in the collection."""
+    """
+    Check if the specified model is available in the collection.
+
+    Args:
+    model (str): Model name or alias.
+    memory (dict): User's memory containing relevant information.
+
+    Returns:
+    None: Displays the availability of the model and updates the transcript.
+    """
     car = client_collection.find_one({"$or": [{"model": model}, {"aliases": model}]})
     if car:
         response = f"Great choice! The {model} is available in our collection."
@@ -188,12 +266,28 @@ def check_model_availability(model, memory):
         ask_model_interest(memory)
 
 def is_relevant_question(user_input):
-    """Check if the user's question is relevant."""
+    """
+    Check if the user's question is relevant to the services offered.
+
+    Args:
+    user_input (str): The question asked by the user.
+
+    Returns:
+    bool: True if the question is relevant, False otherwise.
+    """
     keywords = ["car", "model", "price", "variant", "feature", "appointment", "sales", "service", "toyota", "prius", "corolla", "camry", "rav4"]
     return any(keyword in user_input.lower() for keyword in keywords)
 
 def update_transcript(line):
-    """Update the transcript with the given line."""
+    """
+    Update the conversation transcript on the server.
+
+    Args:
+    line (str): Line of conversation to be added to the transcript.
+    
+    Returns:
+    bool: True if successful, False otherwise.
+    """
     try:
         response = requests.post('http://127.0.0.1:5000/api/update_transcript', json={'line': line})
         return response.ok
@@ -202,7 +296,12 @@ def update_transcript(line):
         return False
 
 def end_conversation(memory):
-    """End the conversation and save the details."""
+    """
+    End the conversation, save the user's information, and update the server.
+
+    Args:
+    memory (dict): User's memory containing the session details.
+    """
     user_info = {
         "name": memory.get("name", "Unknown"),
         "contact": memory.get("contact", "Unknown"),
@@ -218,7 +317,11 @@ def end_conversation(memory):
         print(f"Failed to save conversation: {e}")
 
 def main():
-    """Main function to run the bot."""
+    """
+    Main function to run the chatbot and handle user interactions.
+
+    Gathers user details, handles conversation, checks model availability, and handles booking.
+    """
     memory = {}
     conversation_history = []
 
