@@ -243,29 +243,28 @@ def ask_model_interest(memory):
             continue
         
         # Check if the model is available
-        if check_model_availability(model, memory):
-            update_transcript(f"User is interested in: {model}")
-            memory["model"] = model
-            return model  # Exit loop once a valid model is found
+        actual_model = check_model_availability(model)
+        if actual_model:
+            memory["model"] = actual_model  # Store the resolved model name
+            update_transcript(f"User is interested in: {actual_model}")
+            return actual_model  # Exit loop once a valid model is found
         else:
             response = f"The model {model} is not available in our collection. Please choose a different model."
             print(f"Assistant: {response}")
             text_to_speech(response)
             update_transcript(f"Assistant: {response}")
 
-def check_model_availability(model, memory):
+def check_model_availability(user_input_model):
     """Check if the specified model is available in the database."""
-    car = client_collection.find_one({"$or": [{"model": model}, {"aliases": model}]})
+    car = client_collection.find_one({"$or": [{"model": user_input_model}, {"aliases": user_input_model}]})
     if car:
-        update_transcript(f"User Interested Model: {model}")
-        response = f"Great choice! The {model} is available in our collection."
+        actual_model = car["model"]  # Fetch the official model name
+        response = f"Great choice! The {actual_model} is available in our collection."
         print(f"Assistant: {response}")
         text_to_speech(response)
         update_transcript(f"Assistant: {response}")
-        
-        return True
-    else:
-        return False
+        return actual_model  # Return the resolved model name
+    return None
 
 def is_relevant_question(user_input):
     """
