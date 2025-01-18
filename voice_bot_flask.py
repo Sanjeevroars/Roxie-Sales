@@ -276,7 +276,7 @@ def is_relevant_question(user_input):
     Returns:
     bool: True if the question is relevant, False otherwise.
     """
-    keywords = ["car", "model", "price", "variant", "feature", "appointment", "sales", "service", "toyota", "prius", "corolla", "camry", "rav4"]
+    keywords = ["car", "model", "price", "variant", "feature", "appointment", "sales", "service", "sedan", "suv", "hatchback", "toyota", "prius", "corolla", "camry", "rav4"]
     return any(keyword in user_input.lower() for keyword in keywords)
 
 def update_transcript(line):
