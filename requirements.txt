@@ -6,3 +6,4 @@ python-dotenv
 pyaudio
 pymongo
 Flask-Cors
+flask
