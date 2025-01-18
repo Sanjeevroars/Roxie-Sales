@@ -1,4 +1,5 @@
 ### 1. Toyota Corolla
+Category : Sedan
 Starting Price: ₹1500000
 
 Variants and Prices:
@@ -24,6 +25,7 @@ Comparable Features Between Variants of Toyota Corolla:
 - Corolla XSE: Combines sportiness of SE with luxury features of XLE
 
 ### 2. Toyota Camry
+Category : Sedan
 Starting Price: ₹45,25,000
 
 Variants and Prices:
@@ -49,6 +51,7 @@ Comparable Features Between Variants of Toyota Camry:**
 - Camry TRD: High-performance variant with TRD-tuned suspension, unique styling
 
 ### 3. Toyota RAV4
+Category : SUV, suv
 Starting Price: ₹30,00,000
 
 Variants and Prices:
@@ -101,6 +104,7 @@ Comparable Features Between Variants of Toyota Highlander:
 - Highlander Platinum: Top-tier features including panoramic moonroof, premium interior
 
 ### 5. Toyota Prius
+Category : Hatchback
 Starting Price: ₹25,00,000
 
 Variants and Prices:
