@@ -257,11 +257,12 @@ def check_model_availability(model, memory):
     """Check if the specified model is available in the database."""
     car = client_collection.find_one({"$or": [{"model": model}, {"aliases": model}]})
     if car:
+        update_transcript(f"User Interested Model: {model}")
         response = f"Great choice! The {model} is available in our collection."
         print(f"Assistant: {response}")
         text_to_speech(response)
         update_transcript(f"Assistant: {response}")
-        update_transcript(f"User Interested Model: {model}")
+        
         return True
     else:
         return False
