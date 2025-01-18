@@ -75,7 +75,7 @@ def get_transcript():
 @app.route('/api/end_conversation', methods=['POST'])
 def end_conversation():
     user_info = request.json.get('user_info')
-    interested_model = request.json.get('interested_model')
+    interested_model = user_info.get('interested_model')
     location = request.json.get('location', "Unknown")
     if user_info:
         save_transcript(user_info)
