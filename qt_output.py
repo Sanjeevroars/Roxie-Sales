@@ -351,9 +351,6 @@ class Ui_Widget(object):
         while pygame.mixer.music.get_busy():
             pygame.time.Clock().tick(10)
 
-        if(file_path==os.path.join("assets", "haveAgreatDay.mp3")):
-            self.quit_application
-
     def validate_contact_number(self, contact):
         if not contact:
             return None
