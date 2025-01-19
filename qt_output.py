@@ -409,7 +409,7 @@ class Ui_Widget(object):
         return None
 
     def is_relevant_question(self, user_input):
-        keywords = ["car", "model", "price", "variant", "feature", "appointment", "sales", "service", "sedan", "suv", "hatchback", "person", "family", "toyota", "prius", "corolla", "camry", "rav4"]
+        keywords = ["car", "model", "price", "variant", "feature", "sales", "service", "sedan", "suv", "hatchback", "person", "family", "toyota", "prius", "corolla", "camry", "rav4"]
         return any(keyword in user_input.lower() for keyword in keywords)
 
     def update_transcript(self, line):
