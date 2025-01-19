@@ -326,7 +326,6 @@ class Ui_Widget(object):
                 input=text
             )
 
-            # Once TTS is done, clear the label
             self.speakNowLabel.setText("")  # Clear the "Processing" message
 
             audio_data = response.content
@@ -402,6 +401,7 @@ class Ui_Widget(object):
                 self.update_transcript(f"Assistant: {response}")
 
     def check_model_availability(self, user_input_model):
+        self.speakNowLabel.setText("Processing")  # Update GUI to show "Processing"
         car = client_collection.find_one({"$or": [{"model": user_input_model}, {"aliases": user_input_model}]})
         if car:
             actual_model = car["model"]  
@@ -440,6 +440,9 @@ class Ui_Widget(object):
                 print("Failed to save conversation.")
         except requests.RequestException as e:
             print(f"Failed to save conversation: {e}")
+        finally:
+            QtWidgets.QApplication.exit()
+            QtWidgets.QApplication.exit()
 
     def quit_application(self):
         QtWidgets.QApplication.quit()
