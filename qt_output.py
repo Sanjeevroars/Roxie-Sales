@@ -105,7 +105,7 @@ class Ui_Widget(object):
 
         # Create a QLabel to display "Speak now..." message
         self.speakNowLabel = QtWidgets.QLabel(parent=self.widget)
-        self.speakNowLabel.setGeometry(QtCore.QRect(100, 420, 280, 30))  # Position and size
+        self.speakNowLabel.setGeometry(QtCore.QRect(100, 420, 290, 30))  # Position and size
         self.speakNowLabel.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.speakNowLabel.setStyleSheet("""
                                          color: white;
@@ -268,8 +268,8 @@ class Ui_Widget(object):
             print(f"You said: {text}")
             return text
         except sr.UnknownValueError:
-            print("Sorry, I did not understand that.")
-            self.speakNowLabel.setText("Sorry, I didn't understand that.")  # Update label for errors
+            print("Sorry, I did not understand that")
+            self.speakNowLabel.setText("Sorry, I didn't understand that")  # Update label for errors
             self.speech_to_text(prompt=prompt)
         except sr.RequestError:
             print("Request error from Google Speech Recognition service.")
@@ -385,8 +385,8 @@ class Ui_Widget(object):
         while True:
             model = self.speech_to_text("Which particular model are you interested in?")
             if not model:
-                print("Assistant: I didn't catch that. Could you please repeat?")
-                self.text_to_speech("I didn't catch that. Could you please repeat?")
+                print("Assistant: I didn't catch that Could you please repeat?")
+                self.text_to_speech("I didn't catch that Could you please repeat?")
                 continue
             
             actual_model = self.check_model_availability(model)
