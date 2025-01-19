@@ -66,7 +66,7 @@ class Ui_Widget(object):
         
         # Add logo at the center top
         self.logoLabel = QtWidgets.QLabel(parent=self.widget)
-        self.logoLabel.setGeometry(QtCore.QRect(0, 0, 480, 480))
+        self.logoLabel.setGeometry(QtCore.QRect(0, 20, 480, 480))
         self.logoLabel.setStyleSheet("""
             QLabel {
                 background-image: url(qt_assets/Roxie.png);
@@ -91,7 +91,7 @@ class Ui_Widget(object):
                 color: white;
             }
             QPushButton:hover {
-                background-color: #193659;
+                background-color: #1d508f;
             }
         """)
         self.pushButton.setText("")
@@ -108,13 +108,13 @@ class Ui_Widget(object):
                 background-image: url(qt_assets/quit-icon.png);
                 background-repeat: no-repeat;
                 background-position: center;
-                background-color: #FF5733;
+                background-color: #d4290f;
                 border-radius: 35;
                 border: none;
                 color: white;
             }
             QPushButton:hover {
-                background-color: #C0392B;
+                background-color: #b52e19;
             }
         """)
         self.quitButton.clicked.connect(self.quit_application)
@@ -126,7 +126,7 @@ class Ui_Widget(object):
         self.speakNowLabel.setStyleSheet("""
                                          color: white;
                                          font-size: 20px;
-                                         font-weight: bold;
+                                         font-weight: lighter;
                                          """)
         self.speakNowLabel.setText("")  # Initially empty
         
@@ -148,7 +148,7 @@ class Ui_Widget(object):
                 background-image: url(qt_assets/mic.png);
                 background-repeat: no-repeat;
                 background-position: center;
-                background-color: #454545;
+                background-color: #111112;
                 border-radius: 50;
                 border: none;
                 color: white;
