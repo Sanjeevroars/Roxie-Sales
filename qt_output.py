@@ -18,6 +18,22 @@ load_dotenv()
 ROXIE_API_KEY = os.getenv("Roxie.api_key")
 OPENAI_API_KEY = os.getenv("openai.api_key")
 
+def load_document(file_path):
+    """
+    Load the document content from a specified file.
+
+    Args:
+    file_path (str): Path to the file to be read.
+
+    Returns:
+    str: Contents of the file.
+    """
+    with open(file_path, 'r') as file:
+        document_content = file.read()
+    return document_content
+
+document_content = load_document('company_specific_info.txt')
+
 # Define a constant for the location where appointments are booked.
 LOCATION = "Chennai, India"
 
@@ -274,10 +290,14 @@ class Ui_Widget(object):
         except sr.RequestError:
             print("Request error from Google Speech Recognition service.")
             return ""
+        
+
+    
 
     def chat_with_gpt(self, conversation_history):
         self.speakNowLabel.setText("Processing")
         prompt = (
+            f"{document_content}\n\n"
             f"You are a helpful sales assistant. Always keep responses short and to the point. "
             f"Provide concise and relevant answers based on the conversation context.\n\n"
             f"{conversation_history[-1]}"
