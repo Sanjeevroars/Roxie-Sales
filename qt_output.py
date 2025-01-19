@@ -151,7 +151,7 @@ class Ui_Widget(object):
         except Exception as e:
             print(f"Error running the chatbot: {e}")
         finally:
-            QtCore.QMetaObject.invokeMethod(self.pushButton, "setEnabled")
+            self.pushButton.setEnabled(True)
 
     def book_appointment(self, memory):
         """
@@ -350,6 +350,10 @@ class Ui_Widget(object):
 
         while pygame.mixer.music.get_busy():
             pygame.time.Clock().tick(10)
+
+        if file_path == os.path.join("assets", "haveAgreatDay.mp3"):
+            QtWidgets.QApplication.exit()
+            QtWidgets.QApplication.exit()
 
     def validate_contact_number(self, contact):
         if not contact:
