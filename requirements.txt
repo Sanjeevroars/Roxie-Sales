@@ -7,3 +7,4 @@ pyaudio
 pymongo
 Flask-Cors
 flask
+pyQt6
