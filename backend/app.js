@@ -39,11 +39,14 @@ const PORT = 3000;
 
 app.post("/api/end_conversation", async (req, res) => {
   const { user_info } = req.body;
+  console.log(user_info);
+
   const {interested_model,...otherData }= user_info;
   const client = Client.findOne({ name: interested_model });
   const updatedData  = {...otherData,interested_model:client._id}
 
   const enquiry = await Enquiry.create(updatedData)
+  console.log(enquiry)
   res.status(201).json({
     status: "success",
     data: enquiry,
