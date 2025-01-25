@@ -1,12 +1,28 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Open Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  /* background: linear-gradient(120deg, rgba(2, 4, 34, 1), rgba(34, 3, 43, 1));
+  -webkit-background: linear-gradient(
+    120deg,
+    rgba(2, 4, 34, 1),
+    rgba(34, 3, 43, 1)
+  );
+  -moz-background: linear-gradient(
+    120deg,
+    rgba(2, 4, 34, 1),
+    rgba(34, 3, 43, 1)
+  ); */
+  /* background: linear-gradient(to bottom right, #0b0e23, #1d052d); */
+  background-image: url("./assets/bgm.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
