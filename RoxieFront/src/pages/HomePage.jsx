@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
-import screen from "../assets/screen.jpeg";
+import screen from "../assets/linux.png";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Roxie from "../components/Roxie";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
   useEffect(() => {
@@ -48,12 +52,66 @@ const HomePage = () => {
         delay: 1,
       }
     );
+
+    gsap.fromTo(
+      "#home",
+      {
+        y: 0,
+      },
+      {
+        y: "-100vh",
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: "#home",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      "#roxie",
+      {
+        y: "100vh",
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: "#home",
+          start: "bottom top",
+          end: "bottom bottom",
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      "#roxie .roxieText",
+      {
+        opacity: 0,
+        y: 50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        delay: 0.5,
+        stagger: 0.1,
+      }
+    );
   }, []);
 
   return (
     <div style={styles.container}>
       <Navbar />
-      <div style={styles.mainContent}>
+      <div id="home" style={styles.mainContent}>
         <div style={styles.leftBox}>
           <img
             src={screen}
@@ -73,6 +131,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <div id="roxie" style={styles.roxieWrapper}>
+        <Roxie />
+      </div>
     </div>
   );
 };
@@ -80,6 +141,8 @@ const HomePage = () => {
 const styles = {
   container: {
     fontFamily: "Arial, sans-serif",
+    position: "relative",
+    minHeight: "100vh",
   },
   mainContent: {
     display: "flex",
@@ -87,6 +150,7 @@ const styles = {
     alignItems: "center",
     gap: "300px",
     padding: "20px",
+    height: "100vh",
   },
   leftBox: {
     width: "40%",
@@ -121,6 +185,12 @@ const styles = {
   subText: {
     fontSize: "72px",
     color: "white",
+  },
+  roxieWrapper: {
+    height: "100vh",
+    overflow: "hidden",
+    position: "relative",
+    zIndex: 0,
   },
 };
 

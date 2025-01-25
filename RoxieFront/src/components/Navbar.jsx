@@ -34,11 +34,11 @@ const Navbar = () => {
             <a href="#roxie">Roxie</a>
           </li>
           <li>
-            <a href="#dashboard">Dashboard</a>
+            <a href="#dashboard">Transcript</a>
           </li>
           <li>
             <a href="#transcript" id="transcript-link">
-              Transcript
+              Dashboard
             </a>
           </li>
         </ul>
