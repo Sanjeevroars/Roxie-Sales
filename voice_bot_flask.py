@@ -306,7 +306,7 @@ def end_conversation(memory):
     user_info = {
         "name": memory.get("name", "Unknown"),
         "contact": memory.get("contact", "Unknown"),
-        "date": datetime.datetime.now().strftime("%d-%m-%Y_%H-%M-%S"),
+        "date": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
         "interested_model": memory.get("model", "Not specified"),
         "location": LOCATION
     }

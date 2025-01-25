@@ -2,6 +2,7 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "luxon": "^3.5.0",
     "mongoose": "^8.9.5"
   },
   "name": "backend",
@@ -9,7 +10,6 @@
   "description": "backend for dashboard and api REST",
   "main": "app.js",
   "type": "module",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
