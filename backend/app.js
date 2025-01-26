@@ -23,7 +23,7 @@ const enquirySchema = new mongoose.Schema({
     required: true, // Ensure the field is populated
   },
   location: String,
-  active: {
+  status: {
     type: String,
     default: "Active",
     enum: ["Active", "Not Active", "Converted"],
@@ -94,18 +94,18 @@ const getTraffic = async () => {
   ]);
 };
 
-const  getEnquiryForEachProduct = async  ()=>{
+const getEnquiryForEachProduct = async () => {
   return await Enquiry.aggregate([
     {
-      $lookup:{
-        from:"clientmodels",
-        localField:"interested_model",
-        foreignField:"_id",
-        as:"productDetails",
+      $lookup: {
+        from: "clientmodels",
+        localField: "interested_model",
+        foreignField: "_id",
+        as: "productDetails",
       },
     },
     {
-      $unwind:"$productDetails",
+      $unwind: "$productDetails",
     },
     {
       $group: {
@@ -113,8 +113,10 @@ const  getEnquiryForEachProduct = async  ()=>{
         enquiriesCount: { $sum: 1 }, // Count the number of enquiries
       },
     },
-  ])
-}
+  ]);
+};
+
+
 
 app.get("/traffic-each-day", async (req, res) => {
   const trafficData = await getTraffic();
@@ -123,10 +125,9 @@ app.get("/traffic-each-day", async (req, res) => {
     data: trafficData,
   });
 });
-app.get("/enquiry-per-product",async (req,res)=>{
+app.get("/enquiry-per-product", async (req, res) => {
   const enquiryProduct = await getEnquiryForEachProduct();
-
-})
+});
 app.listen(3000, () => {
   console.log(`App running on Port ${PORT}`);
 });
