@@ -98,7 +98,7 @@ const getEnquiryForEachProduct = async () => {
   return await Enquiry.aggregate([
     {
       $lookup: {
-        from: "clientmodels",
+        from: "client_models",
         localField: "interested_model",
         foreignField: "_id",
         as: "productDetails",
@@ -109,15 +109,60 @@ const getEnquiryForEachProduct = async () => {
     },
     {
       $group: {
-        _id: "$productDetails.name", // Group by product name
-        enquiriesCount: { $sum: 1 }, // Count the number of enquiries
+        _id: "$productDetails.model",
+        enquiriesCount: { $sum: 1 },
       },
     },
   ]);
 };
 
-
-
+const getEnquiryDispersion = async () => {
+  return await Enquiry.aggregate([
+    {
+      $addFields: {
+        dateOnly: {
+          $dateToString: { format: "%Y-%m-%d", date: { $toDate: "$date" } },
+        },
+        hour: { $hour: { $toDate: "$date" } },
+      },
+    },
+    {
+      $group: {
+        _id: { date: "$dateOnly", hour: "$hour" },
+        count: { $sum: 1 },
+      },
+    },
+    {
+      $group: {
+        _id: "$_id.date",
+        hours: {
+          $push: {
+            hour: "$_id.hour",
+            count: "$count",
+          },
+        },
+      },
+    },
+    {
+      $project: {
+        _id: 0,
+        date: "$_id",
+        hours: 1,
+      },
+    },
+    {
+      $sort: { date: 1 },
+    },
+  ]);
+};
+app.get("/enquiry-dispersion-per-hour", async (req, res) => {
+  const enquiryDispersion = await getEnquiryDispersion();
+  console.log(enquiryDispersion);
+  res.json({
+    data: enquiryDispersion,
+    len: enquiryDispersion.length,
+  });
+});
 app.get("/traffic-each-day", async (req, res) => {
   const trafficData = await getTraffic();
   console.log(trafficData);
@@ -126,7 +171,11 @@ app.get("/traffic-each-day", async (req, res) => {
   });
 });
 app.get("/enquiry-per-product", async (req, res) => {
-  const enquiryProduct = await getEnquiryForEachProduct();
+  const enquiryPerProduct = await getEnquiryForEachProduct();
+  console.log(enquiryPerProduct);
+  res.json({
+    data: enquiryPerProduct,
+  });
 });
 app.listen(3000, () => {
   console.log(`App running on Port ${PORT}`);
