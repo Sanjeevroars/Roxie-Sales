@@ -10,6 +10,8 @@ a = Analysis(
     datas=[
         ('qt_assets/*', 'qt_assets'),  # Include all files from the qt_assets directory (for images, sounds, etc.)
         ('.env', '.'),  # Include .env file in the root of the app (for environment variables)
+        ('assets/*', 'assets'),
+        ('company_specific_info.txt', '.')
         # Add more assets or files if needed
     ],
     hiddenimports=[],
