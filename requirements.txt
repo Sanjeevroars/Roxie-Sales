@@ -8,3 +8,4 @@ pymongo
 Flask-Cors
 flask
 pyQt6
+pyinstaller
