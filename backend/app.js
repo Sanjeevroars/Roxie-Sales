@@ -37,12 +37,26 @@ const clientSchema = new mongoose.Schema({
   variants: [String],
 });
 
+const transcriptSchema = new mongoose.Schema({
+  user_info: {
+    name: { type: String, required: true },
+    contact: { type: String, required: true },
+    date: { type: Date, required: true },
+    interested_model: { type: String, required: true },
+    location: { type: String, required: true },
+  },
+  transcript: [String],
+});
+
 const Client =
   mongoose.models.client_models ||
   mongoose.model("client_models", clientSchema);
 const Enquiry =
   mongoose.models.enquiry_details ||
   mongoose.model("enquiry_details", enquirySchema);
+const Transcript =
+  mongoose.transcript_details ||
+  mongoose.model("transcript_details", transcriptSchema);
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -76,6 +90,31 @@ app.post("/api/end_conversation", async (req, res) => {
   });
 });
 
+app.get("/api/transcripts", async (req, res) => {
+  try {
+    const transcripts = await Transcript.find();
+    res.status(200).json(transcripts);
+  } catch (err) {
+    console.log(err.message);
+  }
+});
+
+app.get("/api/transcripts/:id", async (req, res) => {
+  const userId = req.params.id;
+  try {
+    const transcript = await Transcript.findById(userId);
+    if (!transcript) throw new Error("transcript not found");
+    res.status(200).json({
+      status: "ok",
+      data: transcript,
+    });
+  } catch (err) {
+    res.status(400).json({
+      status: "error",
+      data: err.message,
+    });
+  }
+});
 const getTraffic = async () => {
   return await Enquiry.aggregate([
     {
