@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/logor.png";
+// import logo from "../assets/logor.png";
 
 const Navbar = () => {
   useEffect(() => {
@@ -23,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={logo} alt="Logo" className="logo-img" />
+        <img src="/logor.png" alt="Logo" className="logo-img" />
       </div>
       <div className="nav-buttons">
         <ul className="nav-links">
@@ -34,10 +35,10 @@ const Navbar = () => {
             <a href="#roxie">Roxie</a>
           </li>
           <li>
-            <a href="#dashboard">Transcript</a>
+            <Link to="/transcripts">Transcript</Link>
           </li>
           <li>
-            <a href="#transcript" id="transcript-link">
+            <a href="#dashboard" id="dashboard-link">
               Dashboard
             </a>
           </li>

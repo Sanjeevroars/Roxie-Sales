@@ -43,7 +43,7 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-links a#transcript-link {
+.nav-links a#dashboard-link {
   background-color: rgba(49, 34, 59, 0.7);
   padding-left: 15px;
   padding-right: 15px;

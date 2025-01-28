@@ -54,45 +54,7 @@ const HomePage = () => {
     );
 
     gsap.fromTo(
-      "#home",
-      {
-        y: 0,
-      },
-      {
-        y: "-100vh",
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: "#home",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      }
-    );
-
-    gsap.fromTo(
       "#roxie",
-      {
-        y: "100vh",
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 2,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: "#home",
-          start: "bottom top",
-          end: "bottom bottom",
-          scrub: true,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      "#roxie .roxieText",
       {
         opacity: 0,
         y: 50,
@@ -100,10 +62,14 @@ const HomePage = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 1,
         ease: "power2.out",
-        delay: 0.5,
-        stagger: 0.1,
+        scrollTrigger: {
+          trigger: "#roxie",
+          start: "top 80%",
+          end: "bottom top",
+          scrub: true,
+        },
       }
     );
   }, []);
@@ -131,6 +97,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       <div id="roxie" style={styles.roxieWrapper}>
         <Roxie />
       </div>
