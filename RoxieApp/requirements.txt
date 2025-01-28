@@ -1,0 +1,11 @@
+openai
+SpeechRecognition
+pygame
+requests
+python-dotenv
+pyaudio
+pymongo
+Flask-Cors
+flask
+pyQt6
+pyinstaller
