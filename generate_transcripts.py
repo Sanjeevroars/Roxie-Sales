@@ -3,6 +3,7 @@ from random import choices, randint
 from datetime import datetime, timedelta
 from pymongo import MongoClient
 from dotenv import load_dotenv
+import requests
 import os
 
 # Function to generate a skewed random base date (biased towards recent dates)
@@ -70,7 +71,7 @@ except Exception as e:
 
 # Generate files and send to MongoDB
 for i in range(2000):
-    name = choices(names)
+    name = choices(names)[0]
     location = choices(locations, weights=location_weights, k=1)[0]  # Weighted selection for locations
     model = choices(models, weights=model_weights, k=1)[0]  # Weighted selection for models
     
@@ -79,7 +80,7 @@ for i in range(2000):
     contact = f"{randint(6000000000, 9999999999)}"
 
     # Create the JSON structure
-    file_content = {
+    user_info_payload = {
         "user_info": {
             "name": name,
             "contact": contact,
@@ -99,10 +100,18 @@ for i in range(2000):
     }
 
     # Save the entry to MongoDB
-    result = collection.insert_one(file_content)
+    url = "http://localhost:3000/api/end_conversation"
+
+    response = requests.post(url, json=user_info_payload)
+
+    if response.status_code == 201:
+        print("Data successfully sent to API.")
+    else:
+        print(f"Failed to send data. Status code: {response.status_code}")
+
 
     # Remove the _id field for local saving
-    file_content_no_id = file_content.copy()
+    file_content_no_id = user_info_payload.copy()
     file_content_no_id.pop("_id", None)  # Remove the _id if it exists
 
     # Optionally save to a local JSON file (without _id)
