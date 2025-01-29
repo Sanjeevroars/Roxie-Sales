@@ -5,6 +5,7 @@ import {
   FaRegFile,
   FaMicrophone,
 } from "react-icons/fa";
+import RunExe from "./RunExe";
 
 const Roxie = () => {
   return (
@@ -24,10 +25,11 @@ const Roxie = () => {
               <FaRegFile style={styles.icon} />
               Upload Text File
             </button>
-            <button style={styles.talkButton}>
+            {/* <button style={styles.talkButton}>
               <FaMicrophone style={styles.icon} />
               Talk Now
-            </button>
+            </button> */}
+            <RunExe />
           </div>
         </div>
         <div style={styles.rightSection}>
