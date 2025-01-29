@@ -1,0 +1,2504 @@
+{
+    "products": [
+        {
+            "name": "dell_gaming_laptop_1",
+            "image": "dell_gaming_laptop_1.png",
+            "price": "\u20b9137065.00",
+            "rating": 4.8,
+            "reviews": 294,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-13",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b915824."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din01"
+        },
+        {
+            "name": "dell_expensive_laptop_2",
+            "image": "dell_expensive_laptop_2.png",
+            "price": "\u20b981226.00",
+            "rating": 4.1,
+            "reviews": 450,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-06",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b913701."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din02"
+        },
+        {
+            "name": "dell_budget_laptop_3",
+            "image": "dell_budget_laptop_3.png",
+            "price": "\u20b9127889.00",
+            "rating": 4.4,
+            "reviews": 309,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-06",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b96456."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din03"
+        },
+        {
+            "name": "dell_gaming_laptop_4",
+            "image": "dell_gaming_laptop_4.png",
+            "price": "\u20b9111181.00",
+            "rating": 4.4,
+            "reviews": 728,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-30",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b913058."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din04"
+        },
+        {
+            "name": "dell_expensive_laptop_5",
+            "image": "dell_expensive_laptop_5.png",
+            "price": "\u20b940751.00",
+            "rating": 3.6,
+            "reviews": 595,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-20",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b914084."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din05"
+        },
+        {
+            "name": "dell_budget_laptop_6",
+            "image": "dell_budget_laptop_6.png",
+            "price": "\u20b947080.00",
+            "rating": 3.8,
+            "reviews": 106,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-07",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b915346."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din06"
+        },
+        {
+            "name": "dell_expensive_laptop_7",
+            "image": "dell_expensive_laptop_7.png",
+            "price": "\u20b960185.00",
+            "rating": 4.8,
+            "reviews": 207,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-27",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b918349."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din07"
+        },
+        {
+            "name": "dell_expensive_laptop_8",
+            "image": "dell_expensive_laptop_8.png",
+            "price": "\u20b955996.00",
+            "rating": 3.9,
+            "reviews": 999,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-26",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b97541."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din08"
+        },
+        {
+            "name": "dell_gaming_laptop_9",
+            "image": "dell_gaming_laptop_9.png",
+            "price": "\u20b9108614.00",
+            "rating": 4.7,
+            "reviews": 875,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-26",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b917090."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din09"
+        },
+        {
+            "name": "dell_budget_laptop_10",
+            "image": "dell_budget_laptop_10.png",
+            "price": "\u20b9102102.00",
+            "rating": 3.6,
+            "reviews": 663,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-15",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b913249."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din10"
+        },
+        {
+            "name": "dell_gaming_laptop_11",
+            "image": "dell_gaming_laptop_11.png",
+            "price": "\u20b9112503.00",
+            "rating": 3.7,
+            "reviews": 863,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-17",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b96296."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din11"
+        },
+        {
+            "name": "dell_expensive_laptop_12",
+            "image": "dell_expensive_laptop_12.png",
+            "price": "\u20b975387.00",
+            "rating": 3.8,
+            "reviews": 73,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911815."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din12"
+        },
+        {
+            "name": "dell_budget_laptop_13",
+            "image": "dell_budget_laptop_13.png",
+            "price": "\u20b9121699.00",
+            "rating": 4.7,
+            "reviews": 239,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-27",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b98785."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din13"
+        },
+        {
+            "name": "dell_expensive_laptop_14",
+            "image": "dell_expensive_laptop_14.png",
+            "price": "\u20b944944.00",
+            "rating": 4.2,
+            "reviews": 750,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-08",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b919234."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din14"
+        },
+        {
+            "name": "dell_gaming_laptop_15",
+            "image": "dell_gaming_laptop_15.png",
+            "price": "\u20b957624.00",
+            "rating": 3.7,
+            "reviews": 431,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-11",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b915108."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din15"
+        },
+        {
+            "name": "dell_budget_laptop_16",
+            "image": "dell_budget_laptop_16.png",
+            "price": "\u20b9132030.00",
+            "rating": 4.4,
+            "reviews": 80,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-23",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b95835."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din16"
+        },
+        {
+            "name": "dell_expensive_laptop_17",
+            "image": "dell_expensive_laptop_17.png",
+            "price": "\u20b999274.00",
+            "rating": 4.0,
+            "reviews": 842,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-29",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b97415."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din17"
+        },
+        {
+            "name": "dell_gaming_laptop_18",
+            "image": "dell_gaming_laptop_18.png",
+            "price": "\u20b964564.00",
+            "rating": 4.7,
+            "reviews": 951,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-30",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel UHD Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b913375."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din18"
+        },
+        {
+            "name": "dell_expensive_laptop_19",
+            "image": "dell_expensive_laptop_19.png",
+            "price": "\u20b9119567.00",
+            "rating": 4.5,
+            "reviews": 536,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-16",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b913248."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din19"
+        },
+        {
+            "name": "dell_expensive_laptop_20",
+            "image": "dell_expensive_laptop_20.png",
+            "price": "\u20b9134084.00",
+            "rating": 4.5,
+            "reviews": 970,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-07",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b915054."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din20"
+        },
+        {
+            "name": "dell_budget_laptop_21",
+            "image": "dell_budget_laptop_21.png",
+            "price": "\u20b998345.00",
+            "rating": 4.9,
+            "reviews": 805,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-02",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911137."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din21"
+        },
+        {
+            "name": "dell_budget_laptop_22",
+            "image": "dell_budget_laptop_22.png",
+            "price": "\u20b999612.00",
+            "rating": 3.9,
+            "reviews": 287,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-04",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b910073."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din22"
+        },
+        {
+            "name": "dell_gaming_laptop_23",
+            "image": "dell_gaming_laptop_23.png",
+            "price": "\u20b9113724.00",
+            "rating": 4.4,
+            "reviews": 797,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-20",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b97619."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din23"
+        },
+        {
+            "name": "dell_gaming_laptop_24",
+            "image": "dell_gaming_laptop_24.png",
+            "price": "\u20b9135805.00",
+            "rating": 5.0,
+            "reviews": 504,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-14",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b95780."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din24"
+        },
+        {
+            "name": "dell_gaming_laptop_25",
+            "image": "dell_gaming_laptop_25.png",
+            "price": "\u20b957250.00",
+            "rating": 4.5,
+            "reviews": 404,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-08",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel UHD Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916905."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din25"
+        },
+        {
+            "name": "dell_expensive_laptop_26",
+            "image": "dell_expensive_laptop_26.png",
+            "price": "\u20b9138489.00",
+            "rating": 4.0,
+            "reviews": 196,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "32 GB DDR5",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916253."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din26"
+        },
+        {
+            "name": "dell_expensive_laptop_27",
+            "image": "dell_expensive_laptop_27.png",
+            "price": "\u20b960361.00",
+            "rating": 4.1,
+            "reviews": 870,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "32 GB DDR5",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b914499."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din27"
+        },
+        {
+            "name": "dell_expensive_laptop_28",
+            "image": "dell_expensive_laptop_28.png",
+            "price": "\u20b978350.00",
+            "rating": 4.0,
+            "reviews": 159,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Home",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912503."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din28"
+        },
+        {
+            "name": "dell_budget_laptop_29",
+            "image": "dell_budget_laptop_29.png",
+            "price": "\u20b9111470.00",
+            "rating": 4.1,
+            "reviews": 714,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-20",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b918684."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din29"
+        },
+        {
+            "name": "dell_budget_laptop_30",
+            "image": "dell_budget_laptop_30.png",
+            "price": "\u20b946359.00",
+            "rating": 4.9,
+            "reviews": 352,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "32 GB DDR5",
+                "storage": "512GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916251."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din30"
+        },
+        {
+            "name": "dell_gaming_laptop_31",
+            "image": "dell_gaming_laptop_31.png",
+            "price": "\u20b995665.00",
+            "rating": 4.9,
+            "reviews": 640,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-24",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "8 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911225."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din31"
+        },
+        {
+            "name": "dell_expensive_laptop_32",
+            "image": "dell_expensive_laptop_32.png",
+            "price": "\u20b953513.00",
+            "rating": 4.3,
+            "reviews": 97,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b918180."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din32"
+        },
+        {
+            "name": "dell_expensive_laptop_33",
+            "image": "dell_expensive_laptop_33.png",
+            "price": "\u20b9118763.00",
+            "rating": 4.1,
+            "reviews": 532,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-20",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b917112."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din33"
+        },
+        {
+            "name": "dell_budget_laptop_34",
+            "image": "dell_budget_laptop_34.png",
+            "price": "\u20b980602.00",
+            "rating": 4.8,
+            "reviews": 863,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-29",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Windows 11 Pro",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b918206."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din34"
+        },
+        {
+            "name": "dell_budget_laptop_35",
+            "image": "dell_budget_laptop_35.png",
+            "price": "\u20b9138273.00",
+            "rating": 4.2,
+            "reviews": 347,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-02",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b917161."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din35"
+        },
+        {
+            "name": "dell_gaming_laptop_36",
+            "image": "dell_gaming_laptop_36.png",
+            "price": "\u20b970375.00",
+            "rating": 3.5,
+            "reviews": 262,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-06",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916315."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din36"
+        },
+        {
+            "name": "dell_budget_laptop_37",
+            "image": "dell_budget_laptop_37.png",
+            "price": "\u20b952805.00",
+            "rating": 4.6,
+            "reviews": 437,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b919979."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din37"
+        },
+        {
+            "name": "dell_expensive_laptop_38",
+            "image": "dell_expensive_laptop_38.png",
+            "price": "\u20b938216.00",
+            "rating": 3.6,
+            "reviews": 391,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-02",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b97216."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din38"
+        },
+        {
+            "name": "dell_gaming_laptop_39",
+            "image": "dell_gaming_laptop_39.png",
+            "price": "\u20b950007.00",
+            "rating": 3.5,
+            "reviews": 964,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-07",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916612."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din39"
+        },
+        {
+            "name": "dell_gaming_laptop_40",
+            "image": "dell_gaming_laptop_40.png",
+            "price": "\u20b953612.00",
+            "rating": 4.6,
+            "reviews": 752,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-19",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912661."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din40"
+        },
+        {
+            "name": "dell_gaming_laptop_41",
+            "image": "dell_gaming_laptop_41.png",
+            "price": "\u20b9141891.00",
+            "rating": 4.7,
+            "reviews": 271,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-17",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b98240."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din41"
+        },
+        {
+            "name": "dell_expensive_laptop_42",
+            "image": "dell_expensive_laptop_42.png",
+            "price": "\u20b998227.00",
+            "rating": 4.6,
+            "reviews": 668,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-07",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b97455."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din42"
+        },
+        {
+            "name": "dell_budget_laptop_43",
+            "image": "dell_budget_laptop_43.png",
+            "price": "\u20b997156.00",
+            "rating": 3.7,
+            "reviews": 488,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-18",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b918861."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din43"
+        },
+        {
+            "name": "dell_gaming_laptop_44",
+            "image": "dell_gaming_laptop_44.png",
+            "price": "\u20b9116219.00",
+            "rating": 4.4,
+            "reviews": 655,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-13",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b96873."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din44"
+        },
+        {
+            "name": "dell_gaming_laptop_45",
+            "image": "dell_gaming_laptop_45.png",
+            "price": "\u20b975148.00",
+            "rating": 3.5,
+            "reviews": 537,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-29",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912165."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din45"
+        },
+        {
+            "name": "dell_expensive_laptop_46",
+            "image": "dell_expensive_laptop_46.png",
+            "price": "\u20b989641.00",
+            "rating": 4.9,
+            "reviews": 985,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-31",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b96145."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din46"
+        },
+        {
+            "name": "dell_gaming_laptop_47",
+            "image": "dell_gaming_laptop_47.png",
+            "price": "\u20b9126828.00",
+            "rating": 3.5,
+            "reviews": 750,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-24",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b99223."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din47"
+        },
+        {
+            "name": "dell_expensive_laptop_48",
+            "image": "dell_expensive_laptop_48.png",
+            "price": "\u20b9139310.00",
+            "rating": 4.0,
+            "reviews": 713,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-04",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Pro",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916542."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din48"
+        },
+        {
+            "name": "dell_expensive_laptop_49",
+            "image": "dell_expensive_laptop_49.png",
+            "price": "\u20b9140524.00",
+            "rating": 3.9,
+            "reviews": 169,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-11",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912237."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din49"
+        },
+        {
+            "name": "dell_expensive_laptop_50",
+            "image": "dell_expensive_laptop_50.png",
+            "price": "\u20b946850.00",
+            "rating": 3.5,
+            "reviews": 107,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-12",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel UHD Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916660."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din50"
+        },
+        {
+            "name": "dell_budget_laptop_51",
+            "image": "dell_budget_laptop_51.png",
+            "price": "\u20b971276.00",
+            "rating": 4.5,
+            "reviews": 445,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b910916."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din51"
+        },
+        {
+            "name": "dell_budget_laptop_52",
+            "image": "dell_budget_laptop_52.png",
+            "price": "\u20b9137492.00",
+            "rating": 4.8,
+            "reviews": 587,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b910047."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din52"
+        },
+        {
+            "name": "dell_gaming_laptop_53",
+            "image": "dell_gaming_laptop_53.png",
+            "price": "\u20b934924.00",
+            "rating": 3.7,
+            "reviews": 592,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b919603."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din53"
+        },
+        {
+            "name": "dell_gaming_laptop_54",
+            "image": "dell_gaming_laptop_54.png",
+            "price": "\u20b997236.00",
+            "rating": 4.8,
+            "reviews": 740,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-28",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916284."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din54"
+        },
+        {
+            "name": "dell_budget_laptop_55",
+            "image": "dell_budget_laptop_55.png",
+            "price": "\u20b9131534.00",
+            "rating": 5.0,
+            "reviews": 838,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-29",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b98857."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din55"
+        },
+        {
+            "name": "dell_budget_laptop_56",
+            "image": "dell_budget_laptop_56.png",
+            "price": "\u20b956271.00",
+            "rating": 3.9,
+            "reviews": 458,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911332."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din56"
+        },
+        {
+            "name": "dell_gaming_laptop_57",
+            "image": "dell_gaming_laptop_57.png",
+            "price": "\u20b981014.00",
+            "rating": 3.6,
+            "reviews": 245,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-10",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "32 GB DDR5",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911291."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din57"
+        },
+        {
+            "name": "dell_expensive_laptop_58",
+            "image": "dell_expensive_laptop_58.png",
+            "price": "\u20b973088.00",
+            "rating": 3.6,
+            "reviews": 82,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-03",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b95356."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din58"
+        },
+        {
+            "name": "dell_expensive_laptop_59",
+            "image": "dell_expensive_laptop_59.png",
+            "price": "\u20b9125211.00",
+            "rating": 4.1,
+            "reviews": 658,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-23",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b99055."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din59"
+        },
+        {
+            "name": "dell_budget_laptop_60",
+            "image": "dell_budget_laptop_60.png",
+            "price": "\u20b930165.00",
+            "rating": 4.1,
+            "reviews": 789,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b910894."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din60"
+        },
+        {
+            "name": "dell_expensive_laptop_61",
+            "image": "dell_expensive_laptop_61.png",
+            "price": "\u20b945445.00",
+            "rating": 4.3,
+            "reviews": 60,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-08",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b98461."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din61"
+        },
+        {
+            "name": "dell_expensive_laptop_62",
+            "image": "dell_expensive_laptop_62.png",
+            "price": "\u20b937808.00",
+            "rating": 4.1,
+            "reviews": 434,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-10",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "16 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b914091."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din62"
+        },
+        {
+            "name": "dell_budget_laptop_63",
+            "image": "dell_budget_laptop_63.png",
+            "price": "\u20b9125705.00",
+            "rating": 4.5,
+            "reviews": 763,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-19",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b915590."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din63"
+        },
+        {
+            "name": "dell_expensive_laptop_64",
+            "image": "dell_expensive_laptop_64.png",
+            "price": "\u20b9123331.00",
+            "rating": 4.4,
+            "reviews": 823,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-10",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911926."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din64"
+        },
+        {
+            "name": "dell_budget_laptop_65",
+            "image": "dell_budget_laptop_65.png",
+            "price": "\u20b9131517.00",
+            "rating": 4.9,
+            "reviews": 705,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-29",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916778."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din65"
+        },
+        {
+            "name": "dell_expensive_laptop_66",
+            "image": "dell_expensive_laptop_66.png",
+            "price": "\u20b996145.00",
+            "rating": 4.1,
+            "reviews": 862,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-11",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912115."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din66"
+        },
+        {
+            "name": "dell_budget_laptop_67",
+            "image": "dell_budget_laptop_67.png",
+            "price": "\u20b9147225.00",
+            "rating": 4.5,
+            "reviews": 840,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-03",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b917600."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din67"
+        },
+        {
+            "name": "dell_gaming_laptop_68",
+            "image": "dell_gaming_laptop_68.png",
+            "price": "\u20b9128994.00",
+            "rating": 4.5,
+            "reviews": 302,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-10",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b917587."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din68"
+        },
+        {
+            "name": "dell_gaming_laptop_69",
+            "image": "dell_gaming_laptop_69.png",
+            "price": "\u20b983298.00",
+            "rating": 4.7,
+            "reviews": 713,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911275."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din69"
+        },
+        {
+            "name": "dell_expensive_laptop_70",
+            "image": "dell_expensive_laptop_70.png",
+            "price": "\u20b995187.00",
+            "rating": 4.3,
+            "reviews": 806,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-14",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b99019."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din70"
+        },
+        {
+            "name": "dell_expensive_laptop_71",
+            "image": "dell_expensive_laptop_71.png",
+            "price": "\u20b977044.00",
+            "rating": 4.3,
+            "reviews": 435,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-09",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Pro",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912446."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din71"
+        },
+        {
+            "name": "dell_expensive_laptop_72",
+            "image": "dell_expensive_laptop_72.png",
+            "price": "\u20b952253.00",
+            "rating": 3.8,
+            "reviews": 885,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Home",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911110."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din72"
+        },
+        {
+            "name": "dell_gaming_laptop_73",
+            "image": "dell_gaming_laptop_73.png",
+            "price": "\u20b937087.00",
+            "rating": 4.3,
+            "reviews": 902,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-30",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b914249."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din73"
+        },
+        {
+            "name": "dell_gaming_laptop_74",
+            "image": "dell_gaming_laptop_74.png",
+            "price": "\u20b947594.00",
+            "rating": 4.1,
+            "reviews": 990,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-11",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b918061."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din74"
+        },
+        {
+            "name": "dell_gaming_laptop_75",
+            "image": "dell_gaming_laptop_75.png",
+            "price": "\u20b941989.00",
+            "rating": 4.7,
+            "reviews": 133,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-23",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "8 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912398."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din75"
+        },
+        {
+            "name": "dell_budget_laptop_76",
+            "image": "dell_budget_laptop_76.png",
+            "price": "\u20b944714.00",
+            "rating": 3.7,
+            "reviews": 483,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel UHD Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b914649."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din76"
+        },
+        {
+            "name": "dell_expensive_laptop_77",
+            "image": "dell_expensive_laptop_77.png",
+            "price": "\u20b9125629.00",
+            "rating": 4.8,
+            "reviews": 410,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-29",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel UHD Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b910159."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din77"
+        },
+        {
+            "name": "dell_gaming_laptop_78",
+            "image": "dell_gaming_laptop_78.png",
+            "price": "\u20b9143410.00",
+            "rating": 3.7,
+            "reviews": 230,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-01",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b98785."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din78"
+        },
+        {
+            "name": "dell_gaming_laptop_79",
+            "image": "dell_gaming_laptop_79.png",
+            "price": "\u20b9113446.00",
+            "rating": 4.8,
+            "reviews": 508,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-31",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b918395."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din79"
+        },
+        {
+            "name": "dell_gaming_laptop_80",
+            "image": "dell_gaming_laptop_80.png",
+            "price": "\u20b938923.00",
+            "rating": 4.8,
+            "reviews": 413,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-19",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Pro",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "8 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b919560."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din80"
+        },
+        {
+            "name": "dell_expensive_laptop_81",
+            "image": "dell_expensive_laptop_81.png",
+            "price": "\u20b995967.00",
+            "rating": 3.7,
+            "reviews": 434,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2025-01-04",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916985."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din81"
+        },
+        {
+            "name": "dell_budget_laptop_82",
+            "image": "dell_budget_laptop_82.png",
+            "price": "\u20b999608.00",
+            "rating": 4.3,
+            "reviews": 985,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "8 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b919571."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din82"
+        },
+        {
+            "name": "dell_expensive_laptop_83",
+            "image": "dell_expensive_laptop_83.png",
+            "price": "\u20b952480.00",
+            "rating": 3.6,
+            "reviews": 911,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-20",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "Intel Iris Xe Graphics",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912618."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din83"
+        },
+        {
+            "name": "dell_budget_laptop_84",
+            "image": "dell_budget_laptop_84.png",
+            "price": "\u20b948961.00",
+            "rating": 4.1,
+            "reviews": 362,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-19",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916232."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din84"
+        },
+        {
+            "name": "dell_expensive_laptop_85",
+            "image": "dell_expensive_laptop_85.png",
+            "price": "\u20b941003.00",
+            "rating": 4.4,
+            "reviews": 625,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-28",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911536."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din85"
+        },
+        {
+            "name": "dell_expensive_laptop_86",
+            "image": "dell_expensive_laptop_86.png",
+            "price": "\u20b944629.00",
+            "rating": 4.4,
+            "reviews": 801,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-18",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Pro",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b911226."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din86"
+        },
+        {
+            "name": "dell_budget_laptop_87",
+            "image": "dell_budget_laptop_87.png",
+            "price": "\u20b9116707.00",
+            "rating": 4.4,
+            "reviews": 147,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-25",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "16 GB DDR4",
+                "storage": "512GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#000000",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b915796."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din87"
+        },
+        {
+            "name": "dell_budget_laptop_88",
+            "image": "dell_budget_laptop_88.png",
+            "price": "\u20b993252.00",
+            "rating": 4.7,
+            "reviews": 245,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel UHD Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b917942."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din88"
+        },
+        {
+            "name": "dell_budget_laptop_89",
+            "image": "dell_budget_laptop_89.png",
+            "price": "\u20b967437.00",
+            "rating": 4.7,
+            "reviews": 568,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-08",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel UHD Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b917617."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din89"
+        },
+        {
+            "name": "dell_expensive_laptop_90",
+            "image": "dell_expensive_laptop_90.png",
+            "price": "\u20b9136137.00",
+            "rating": 4.9,
+            "reviews": 588,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Pro",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b98707."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din90"
+        },
+        {
+            "name": "dell_expensive_laptop_91",
+            "image": "dell_expensive_laptop_91.png",
+            "price": "\u20b970866.00",
+            "rating": 4.2,
+            "reviews": 620,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-09",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#C0C0C0",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b910916."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din91"
+        },
+        {
+            "name": "dell_gaming_laptop_92",
+            "image": "dell_gaming_laptop_92.png",
+            "price": "\u20b9113107.00",
+            "rating": 3.8,
+            "reviews": 620,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-21",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "8 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916948."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din92"
+        },
+        {
+            "name": "dell_gaming_laptop_93",
+            "image": "dell_gaming_laptop_93.png",
+            "price": "\u20b964270.00",
+            "rating": 4.5,
+            "reviews": 149,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-15",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Ubuntu Linux",
+                "graphics": "Intel UHD Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#32CD32",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b99429."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din93"
+        },
+        {
+            "name": "dell_gaming_laptop_94",
+            "image": "dell_gaming_laptop_94.png",
+            "price": "\u20b9109957.00",
+            "rating": 4.1,
+            "reviews": 705,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-09",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b97895."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din94"
+        },
+        {
+            "name": "dell_budget_laptop_95",
+            "image": "dell_budget_laptop_95.png",
+            "price": "\u20b947823.00",
+            "rating": 4.0,
+            "reviews": 868,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-07",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Pro",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "32 GB DDR5",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b98813."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din95"
+        },
+        {
+            "name": "dell_gaming_laptop_96",
+            "image": "dell_gaming_laptop_96.png",
+            "price": "\u20b998786.00",
+            "rating": 3.9,
+            "reviews": 864,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-16",
+            "specifications": {
+                "processor": "Intel Core i9-13980HX",
+                "os": "Ubuntu Linux",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "1.8 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b98780."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din96"
+        },
+        {
+            "name": "dell_expensive_laptop_97",
+            "image": "dell_expensive_laptop_97.png",
+            "price": "\u20b9139072.00",
+            "rating": 4.7,
+            "reviews": 937,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-24",
+            "specifications": {
+                "processor": "Intel Core i7-1364U",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce RTX 3060",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b912273."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din97"
+        },
+        {
+            "name": "dell_expensive_laptop_98",
+            "image": "dell_expensive_laptop_98.png",
+            "price": "\u20b9141840.00",
+            "rating": 3.8,
+            "reviews": 176,
+            "stock": "Out of Stock",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-22",
+            "specifications": {
+                "processor": "AMD Ryzen 7 5800H",
+                "os": "Windows 11 Pro",
+                "graphics": "Intel UHD Graphics",
+                "memory": "32 GB DDR5",
+                "storage": "1TB SSD",
+                "display": "14-inch Full HD",
+                "weight": "1.4 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b916360."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din98"
+        },
+        {
+            "name": "dell_budget_laptop_99",
+            "image": "dell_budget_laptop_99.png",
+            "price": "\u20b942752.00",
+            "rating": 4.3,
+            "reviews": 867,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-17",
+            "specifications": {
+                "processor": "Intel Core i5-1334U",
+                "os": "Windows 11 Home",
+                "graphics": "NVIDIA GeForce GTX 1650",
+                "memory": "16 GB DDR4",
+                "storage": "1TB SSD",
+                "display": "15.6-inch Full HD",
+                "weight": "2.3 kg"
+            },
+            "color": "#1E90FF",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b918650."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din99"
+        },
+        {
+            "name": "dell_gaming_laptop_100",
+            "image": "dell_gaming_laptop_100.png",
+            "price": "\u20b987671.00",
+            "rating": 4.2,
+            "reviews": 556,
+            "stock": "In Stock for Fast Delivery",
+            "delivery_estimate": "Estimated delivery date",
+            "available_from": "2024-12-16",
+            "specifications": {
+                "processor": "AMD Ryzen 5 5600U",
+                "os": "Windows 11 Home",
+                "graphics": "AMD Radeon RX 6600M",
+                "memory": "8 GB DDR4",
+                "storage": "256GB SSD",
+                "display": "16-inch 4K UHD",
+                "weight": "1.8 kg"
+            },
+            "color": "#FF4500",
+            "special_offers": [
+                "Dell Rewards Earn up to \u20b96525."
+            ],
+            "financing": "No cost EMI available. See options at checkout.",
+            "order_code": "sin5440340201din100"
+        }
+    ]
+}

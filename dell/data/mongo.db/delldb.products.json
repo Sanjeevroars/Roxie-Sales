@@ -1,0 +1,247 @@
+[{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628c8"
+  },
+  "name": "Dell XPS 13",
+  "description": "13-inch ultrabook with powerful specs",
+  "specification": "Intel i7, 16GB RAM, 512GB SSD, 13.3-inch display",
+  "type": "laptop",
+  "quantity": 20,
+  "rating": 4.7,
+  "reviews": 150,
+  "release_date": "2023-05-01"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628c9"
+  },
+  "name": "Apple MacBook Air",
+  "description": "Thin and light MacBook with Apple M1 chip",
+  "specification": "Apple M1, 8GB RAM, 256GB SSD, 13.3-inch display",
+  "type": "laptop",
+  "quantity": 50,
+  "rating": 4.8,
+  "reviews": 300,
+  "release_date": "2021-11-10"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628ca"
+  },
+  "name": "HP Spectre x360",
+  "description": "Convertible laptop with 4K touchscreen",
+  "specification": "Intel i7, 16GB RAM, 1TB SSD, 15.6-inch 4K touchscreen",
+  "type": "laptop",
+  "quantity": 15,
+  "rating": 4.5,
+  "reviews": 100,
+  "release_date": "2022-08-15"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628cb"
+  },
+  "name": "Asus ZenBook 14",
+  "description": "Compact laptop with great performance",
+  "specification": "Intel i5, 8GB RAM, 512GB SSD, 14-inch display",
+  "type": "laptop",
+  "quantity": 30,
+  "rating": 4.3,
+  "reviews": 180,
+  "release_date": "2023-01-20"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628cc"
+  },
+  "name": "Lenovo ThinkPad X1 Carbon",
+  "description": "Business laptop with excellent build quality",
+  "specification": "Intel i7, 16GB RAM, 512GB SSD, 14-inch display",
+  "type": "laptop",
+  "quantity": 40,
+  "rating": 4.6,
+  "reviews": 220,
+  "release_date": "2022-11-05"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628cd"
+  },
+  "name": "Logitech MX Master 3",
+  "description": "Wireless mouse with ergonomic design",
+  "specification": "Wireless, rechargeable battery",
+  "type": "laptop_accessories",
+  "quantity": 100,
+  "rating": 4.8,
+  "reviews": 250,
+  "release_date": "2020-06-15"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628ce"
+  },
+  "name": "Apple Magic Keyboard",
+  "description": "Wireless keyboard with slim design",
+  "specification": "Bluetooth, rechargeable",
+  "type": "laptop_accessories",
+  "quantity": 80,
+  "rating": 4.7,
+  "reviews": 190,
+  "release_date": "2021-03-10"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628cf"
+  },
+  "name": "Samsung 32GB USB-C Flash Drive",
+  "description": "Compact flash drive with fast read/write speeds",
+  "specification": "32GB storage, USB-C",
+  "type": "laptop_accessories",
+  "quantity": 120,
+  "rating": 4.5,
+  "reviews": 120,
+  "release_date": "2022-02-25"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d0"
+  },
+  "name": "Bose QuietComfort 35 II",
+  "description": "Noise-cancelling headphones",
+  "specification": "Bluetooth, up to 20 hours battery life",
+  "type": "laptop_accessories",
+  "quantity": 75,
+  "rating": 4.9,
+  "reviews": 350,
+  "release_date": "2020-11-01"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d1"
+  },
+  "name": "Anker PowerCore 10000mAh",
+  "description": "Portable charger for laptops and smartphones",
+  "specification": "10000mAh capacity, USB-C, fast charging",
+  "type": "laptop_accessories",
+  "quantity": 60,
+  "rating": 4.6,
+  "reviews": 200,
+  "release_date": "2021-05-05"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d2"
+  },
+  "name": "Razer Blade 15",
+  "description": "Gaming laptop with RTX graphics",
+  "specification": "Intel i9, 32GB RAM, 1TB SSD, RTX 3080",
+  "type": "laptop",
+  "quantity": 25,
+  "rating": 4.9,
+  "reviews": 400,
+  "release_date": "2022-09-10"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d3"
+  },
+  "name": "Alienware m15",
+  "description": "Gaming laptop with high-performance specs",
+  "specification": "Intel i7, 16GB RAM, 512GB SSD, RTX 3060",
+  "type": "laptop",
+  "quantity": 40,
+  "rating": 4.6,
+  "reviews": 320,
+  "release_date": "2023-03-17"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d4"
+  },
+  "name": "Microsoft Surface Laptop 4",
+  "description": "Laptop with great display and performance",
+  "specification": "Intel i7, 16GB RAM, 512GB SSD, 15-inch display",
+  "type": "laptop",
+  "quantity": 20,
+  "rating": 4.8,
+  "reviews": 150,
+  "release_date": "2021-04-12"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d5"
+  },
+  "name": "Corsair K95 RGB Keyboard",
+  "description": "Mechanical keyboard with RGB lighting",
+  "specification": "Cherry MX switches, RGB",
+  "type": "laptop_accessories",
+  "quantity": 50,
+  "rating": 4.7,
+  "reviews": 210,
+  "release_date": "2020-12-18"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d6"
+  },
+  "name": "Harman Kardon Onyx Studio 4",
+  "description": "Portable wireless speaker",
+  "specification": "Bluetooth, 8 hours battery life",
+  "type": "laptop_accessories",
+  "quantity": 70,
+  "rating": 4.4,
+  "reviews": 180,
+  "release_date": "2020-07-20"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d7"
+  },
+  "name": "HP Omen 15",
+  "description": "Gaming laptop with Intel and Nvidia specs",
+  "specification": "Intel i7, 16GB RAM, 512GB SSD, RTX 3060",
+  "type": "laptop",
+  "quantity": 35,
+  "rating": 4.5,
+  "reviews": 280,
+  "release_date": "2023-02-28"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d8"
+  },
+  "name": "Samsung T7 Portable SSD",
+  "description": "High-speed portable SSD",
+  "specification": "1TB storage, USB-C",
+  "type": "laptop_accessories",
+  "quantity": 100,
+  "rating": 4.8,
+  "reviews": 220,
+  "release_date": "2021-06-15"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628d9"
+  },
+  "name": "JBL Flip 5 Bluetooth Speaker",
+  "description": "Waterproof Bluetooth speaker",
+  "specification": "Bluetooth, 12 hours battery life",
+  "type": "laptop_accessories",
+  "quantity": 150,
+  "rating": 4.5,
+  "reviews": 300,
+  "release_date": "2020-08-10"
+},
+{
+  "_id": {
+    "$oid": "6756daaec94f5cc40cb628da"
+  },
+  "name": "Sony WH-1000XM4",
+  "description": "Premium noise-cancelling headphones",
+  "specification": "Bluetooth, 30 hours battery life",
+  "type": "laptop_accessories",
+  "quantity": 60,
+  "rating": 4.9,
+  "reviews": 500,
+  "release_date": "2021-03-05"
+}]
