@@ -109,9 +109,9 @@ app.get("/api/transcripts", async (req, res) => {
 });
 
 app.get("/api/transcripts/:id", async (req, res) => {
-  const userId = req.params.id;
+  const transcriptId = req.params.id;
   try {
-    const transcript = await Transcript.findById(userId);
+    const transcript = await Transcript.findById(transcriptId);
     if (!transcript) throw new Error("transcript not found");
     res.status(200).json({
       status: "ok",
@@ -125,19 +125,54 @@ app.get("/api/transcripts/:id", async (req, res) => {
   }
 });
 
+app.post("/api/transcripts/:id/status", async (req, res) => {
+  const transcriptId = req.params.id;
+  const { status } = req.body;
+  try {
+    const transcript = await Transcript.findById(transcriptId);
+    if (!transcript) throw new Error("transcript not found");
+    const enquiry = await Enquiry.findOne({ transcriptId: transcript._id });
+    // console.log(enquiry)
+    const updatedEnquiry = await Enquiry.findByIdAndUpdate(
+      enquiry._id,
+      { status },
+      { new: true }
+    );
+    res.json({
+      status: "ok",
+      data: updatedEnquiry,
+    });
+  } catch (err) {
+    res.status(400).json({
+      status: "error",
+      data: err.message,
+    });
+  }
+});
+
 const getTraffic = async () => {
   return await Enquiry.aggregate([
     {
-      $addFields: {
-        dateOnly: {
-          $substr: ["$date", 0, 10],
+      $group: {
+        _id: {
+          dateTrunc: { $dateTrunc: { date: "$date", unit: "day" } },
         },
+        count: { $sum: 1 },
       },
     },
     {
-      $group: {
-        _id: "$dateOnly", // Group by the formatted date
-        trafficCount: { $sum: 1 }, // Count the number of documents for each date
+      $sort: { "_id.dateTrunc": 1 }, // Sort by actual Date field
+    },
+
+    {
+      $setWindowFields: {
+        sortBy: { "_id.dateTrunc": 1 }, // Ensure this is a Date type
+        output: {
+          movingAvg: {
+            $avg: "$count",
+            window: { range: [-6, 0], unit: "day" },
+          },
+        },
       },
     },
   ]);
