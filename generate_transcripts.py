@@ -72,7 +72,7 @@ def calculate_moving_average(timestamps):
 status = ["Active", "Not Active", "Converted"]
 
 # Generate files and send to MongoDB
-for i in range(1499):
+for i in range(2000):
     name = choices(names)[0]
     location = choices(locations, weights=location_weights, k=1)[0]
     model = choices(models, weights=model_weights, k=1)[0]
@@ -112,7 +112,6 @@ for i in range(1499):
             f"Assistant: You are interested in -> {model}",
             f"Booking appointment for {name} @ {location}.",
             "Assistant: Our Sales team will contact you shortly. Have a great day!",
-            f"Assistant: Current moving average of enquiries per minute: {moving_avg:.2f}"  # Added moving average
         ]
     }
 
