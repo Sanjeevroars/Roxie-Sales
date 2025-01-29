@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import { DateTime } from "luxon";
+import cors from "cors";
 
 mongoose
   .connect(
@@ -79,7 +80,6 @@ enquirySchema.pre("aggregate", function (next) {
   next();
 });
 
-
 const Client =
   mongoose.models.client_models ||
   mongoose.model("client_models", clientSchema);
@@ -93,6 +93,7 @@ const Transcript =
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors());
 console.log("ok");
 const PORT = 3000;
 
@@ -129,7 +130,7 @@ app.post("/api/end_conversation", async (req, res) => {
 
 app.get("/api/transcripts", async (req, res) => {
   try {
-    const transcripts = await Transcript.find();
+    const transcripts = await Transcript.find().limit(50);
     res.status(200).json(transcripts);
   } catch (err) {
     console.log(err.message);
@@ -178,7 +179,7 @@ app.post("/api/transcripts/:id/status", async (req, res) => {
   }
 });
 
-const getTraffic = async (year , month) => {
+const getTraffic = async (year, month) => {
   return await Enquiry.aggregate(
     [
       {
@@ -299,26 +300,29 @@ app.get("/enquiry-per-product", async (req, res) => {
   });
 });
 
-app.get('/api/enquiries', async (req, res) => {
+app.get("/api/enquiries", async (req, res) => {
   const year = req.query.year ? parseInt(req.query.year) : undefined;
   const month = req.query.month ? parseInt(req.query.month) : undefined;
   try {
-      const enquiries = await Enquiry.aggregate([
-          {
-              $group: {
-                  _id: { $substr: ["$date", 0, 10] }, // Group by the date part of the 'date' field
-                  count: { $sum: 1 }, // Count the number of enquiries per day
-              },
+    const enquiries = await Enquiry.aggregate(
+      [
+        {
+          $group: {
+            _id: { $substr: ["$date", 0, 10] }, // Group by the date part of the 'date' field
+            count: { $sum: 1 }, // Count the number of enquiries per day
           },
-          { $sort: { _id: 1 } }, // Sort by date
+        },
+        { $sort: { _id: 1 } }, // Sort by date
       ],
-      { pipelineOptions: { year, month } 
-    });
+      { pipelineOptions: { year, month } }
+    );
 
-  res.json(enquiries.map(entry => ({ date: entry._id, enquiries: entry.count })));
-} catch (error) {
-  res.status(500).send(error.message);
-}
+    res.json(
+      enquiries.map((entry) => ({ date: entry._id, enquiries: entry.count }))
+    );
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
 });
 
 app.listen(3000, () => {

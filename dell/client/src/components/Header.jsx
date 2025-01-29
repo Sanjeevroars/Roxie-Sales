@@ -1,9 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaSearch, FaUser, FaShoppingCart, FaGlobe, FaTags, FaServer, FaDesktop, FaTools, FaInfoCircle } from "react-icons/fa";
-import FooterPart from "./FooterPart";
+import {
+  FaSearch,
+  FaUser,
+  FaShoppingCart,
+  FaGlobe,
+  FaTags,
+  FaServer,
+  FaDesktop,
+  FaTools,
+  FaInfoCircle,
+} from "react-icons/fa";
 
 const Header = () => {
+  const handleRedirect = (url) => {
+    window.location.href = url;
+  };
+
   return (
     <header className="bg-white shadow-md">
       {/* First Row */}
@@ -29,106 +42,100 @@ const Header = () => {
 
         {/* Right-Side Links */}
         <div className="flex items-center space-x-4">
-          <Dropdown
-            label="Sign In"
-            icon={<FaUser />}
-            options={["Profile", "Orders", "Logout"]}
-          />
-          <Link to="/contact" className="hover:underline flex items-center space-x-2">
-            <FaInfoCircle className="w-4 h-4" />
-            <span>Contact Us</span>
-          </Link>
-          <Dropdown
-            label="IN/EN"
-            icon={<FaGlobe />}
-            options={["English", "Hindi"]}
-          />
-          <Dropdown
-            label="Cart"
-            icon={<FaShoppingCart />}
-            options={["View Cart", "Checkout"]}
-          />
+          <button
+            onClick={() => handleRedirect("http://localhost:3000")} // Redirect to the desired URL
+            className="flex items-center space-x-2 text-gray-700 hover:text-blue-500"
+          >
+            <FaGlobe />
+            <span>Dashboard</span>
+          </button>
         </div>
       </div>
 
       {/* Second Row */}
       <div className="flex justify-start items-center space-x-6 px-4 py-2 border-t mx-5 mb-10">
-        
-        <Link to="/products" className="hover:underline flex items-center space-x-2">
-        <Dropdown
-          label="Artificial Intelligence"
-          icon={<FaServer />}
-          options={["View All Apex", "Compute & HCI", "Storage", "Cyber & Data Protection", "Custom Solutions"]}
-        />
+        <Link
+          to="/products"
+          className="hover:underline flex items-center space-x-2"
+        >
+          <button
+            onClick={() => handleRedirect("http://localhost:3001")} // Redirect to the desired URL
+            className="flex items-center space-x-2 text-gray-700 hover:text-blue-500"
+          >
+            <FaServer />
+            <span>Artificial Intelligence</span>
+          </button>
         </Link>
-        
-        <Link to="/products" className="hover:underline flex items-center space-x-2">
-        <Dropdown
-          label="IT Infrastructure"
-          icon={<FaTools />}
-          options={["View All Solutions", "Cloud Solutions", "DevOps Tools", "Edge Solutions"]}
-        />
+
+        <Link
+          to="/products"
+          className="hover:underline flex items-center space-x-2"
+        >
+          <button
+            onClick={() => handleRedirect("http://localhost:3002")} // Redirect to the desired URL
+            className="flex items-center space-x-2 text-gray-700 hover:text-blue-500"
+          >
+            <FaTools />
+            <span>IT Infrastructure</span>
+          </button>
         </Link>
-        
-        <Link to="/products" className="hover:underline flex items-center space-x-2">
-        <Dropdown
-          label="Computer and Accessories"
-          icon={<FaDesktop />}
-          options={["Laptops", "Desktops", "Gaming", "Workstations", "Servers", "Monitors"]}
-        />
+
+        <Link
+          to="/products"
+          className="hover:underline flex items-center space-x-2"
+        >
+          <button
+            onClick={() => handleRedirect("http://localhost:3003")} // Redirect to the desired URL
+            className="flex items-center space-x-2 text-gray-700 hover:text-blue-500"
+          >
+            <FaDesktop />
+            <span>Computer and Accessories</span>
+          </button>
         </Link>
-        
-        <Link to="/products" className="hover:underline flex items-center space-x-2">
-        <Dropdown
-          label="Services"
-          icon={<FaTools />}
-          options={["Consultation", "Deployment", "Support", "Education"]}
-        />
+
+        <Link
+          to="/products"
+          className="hover:underline flex items-center space-x-2"
+        >
+          <button
+            onClick={() => handleRedirect("http://localhost:3004")} // Redirect to the desired URL
+            className="flex items-center space-x-2 text-gray-700 hover:text-blue-500"
+          >
+            <FaTools />
+            <span>Services</span>
+          </button>
         </Link>
-        
-        <Link to="/products" className="hover:underline flex items-center space-x-2">
-        <Dropdown
-          label="Support"
-          icon={<FaInfoCircle />}
-          options={["Support Home", "Warranty", "Drivers", "Documentation"]}
-        />
+
+        <Link
+          to="/products"
+          className="hover:underline flex items-center space-x-2"
+        >
+          <button
+            onClick={() => handleRedirect("http://localhost:3005")} // Redirect to the desired URL
+            className="flex items-center space-x-2 text-gray-700 hover:text-blue-500"
+          >
+            <FaInfoCircle />
+            <span>Support</span>
+          </button>
         </Link>
-        
-        <Link to="/products" className="hover:underline flex items-center space-x-2">
-        <Dropdown
-          label="Deals"
-          icon={<FaTags />}
-          options={["Laptop Deals", "Gaming PC Deals", "Workstation Deals"]}
-        />
+
+        <Link
+          to="/products"
+          className="hover:underline flex items-center space-x-2"
+        >
+          <button
+            onClick={() => handleRedirect("http://localhost:3006")} // Redirect to the desired URL
+            className="flex items-center space-x-2 text-gray-700 hover:text-blue-500"
+          >
+            <FaTags />
+            <span>Deals</span>
+          </button>
         </Link>
         <Link to="/store" className="hover:underline">
           Find A Store
         </Link>
-        
       </div>
     </header>
-  );
-};
-
-const Dropdown = ({ label, icon, options }) => {
-  return (
-    <div className="relative group">
-      <button className="flex items-center space-x-2 text-gray-700 hover:text-blue-500 focus:outline-none">
-        {icon && <span className="w-4 h-4">{icon}</span>}
-        <span>{label}</span>
-      </button>
-      <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-10">
-        {options.map((option, index) => (
-          <Link
-            to="#"
-            key={index}
-            className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100"
-          >
-            {option}
-          </Link>
-        ))}
-      </div>
-    </div>
   );
 };
 

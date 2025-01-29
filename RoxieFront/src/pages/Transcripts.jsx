@@ -1,19 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 
 const Transcripts = () => {
-  const transcripts = Array.from({ length: 20 }, (_, index) => ({
-    name: `Transcript ${index + 1}`,
-    description: `This is the description for Transcript ${
-      index + 1
-    }. It contains detailed information about the transcript.`,
-    content: `This is the detailed content of Transcript ${
-      index + 1
-    }. It includes all the important points and information related to the transcript.`,
-  }));
+  const [transcripts, setTranscripts] = useState([]);
+  const [selectedTranscript, setSelectedTranscript] = useState(null);
 
-  const [selectedTranscript, setSelectedTranscript] = useState(transcripts[0]);
+  useEffect(() => {
+    const fetchTranscripts = async () => {
+      try {
+        console.log("hit");
+        const response = await fetch("http://localhost:3000/api/transcripts");
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        if (Array.isArray(data) && data.length > 0) {
+          setTranscripts(data);
+          setSelectedTranscript(data[0]); // Select first transcript by default
+        }
+      } catch (error) {
+        console.error("Error fetching transcripts:", error);
+      }
+    };
+
+    fetchTranscripts();
+  }, []);
 
   const handleTranscriptClick = (transcript) => {
     setSelectedTranscript(transcript);
@@ -26,16 +38,20 @@ const Transcripts = () => {
         <div className="leftPane" style={styles.leftPane}>
           <h2 style={styles.title}>Transcripts</h2>
           <div style={styles.transcriptsList}>
-            {transcripts.map((transcript, index) => (
-              <div
-                key={index}
-                style={styles.transcriptItem}
-                onClick={() => handleTranscriptClick(transcript)}
-              >
-                <span>{transcript.name}</span>
-                <FaArrowRight style={styles.arrowIcon} />
-              </div>
-            ))}
+            {transcripts.length > 0 ? (
+              transcripts.map((transcript) => (
+                <div
+                  key={transcript._id}
+                  style={styles.transcriptItem}
+                  onClick={() => handleTranscriptClick(transcript)}
+                >
+                  <span>{transcript.user_info.name}</span>
+                  <FaArrowRight style={styles.arrowIcon} />
+                </div>
+              ))
+            ) : (
+              <p style={styles.loadingText}>No transcripts available.</p>
+            )}
           </div>
         </div>
 
@@ -43,11 +59,15 @@ const Transcripts = () => {
           <div style={styles.rightPane}>
             <h3>{selectedTranscript.name}</h3>
             <p>
-              <strong>Description:</strong> {selectedTranscript.description}
+              <strong>Description:</strong> {selectedTranscript.user_info.name}
             </p>
-            <p>
-              <strong>Content:</strong> {selectedTranscript.content}
-            </p>
+            {Array.isArray(selectedTranscript.transcript) ? (
+              selectedTranscript.transcript.map((line, index) => (
+                <li key={index}>{line}</li>
+              ))
+            ) : (
+              <p>No transcript content available.</p>
+            )}
           </div>
         )}
       </div>
@@ -119,6 +139,10 @@ const styles = {
     borderRadius: "15px",
     boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
     marginLeft: "20px",
+  },
+  loadingText: {
+    color: "white",
+    textAlign: "center",
   },
 };
 
