@@ -33,7 +33,7 @@ locations = [
 ]
 
 # Adjusted weights for locations (Mumbai has the highest weight)
-location_weights = [7, 4, 6, 3, 5, 10, 3, 2, 2, 1]  # Mumbai, Delhi, and Bangalore favored
+location_weights = [7, 4, 6, 3, 5, 10, 3, 2, 2, 1]
 
 # List of models with biased weights (e.g., Toyota Prius more common)
 models = ["Toyota Prius", "Toyota Corolla", "Toyota Camry", "Toyota RAV4"]
