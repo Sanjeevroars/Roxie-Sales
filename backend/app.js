@@ -54,30 +54,31 @@ const transcriptSchema = new mongoose.Schema({
 
 enquirySchema.pre("aggregate", function (next) {
   // Retrieve pipeline options (default to empty object if not set)
-  const { year, months } = this.options.pipelineOptions || {};
+  const { year, month } = this.options.pipelineOptions || {};
 
   const matchStage = {}; // Initialize match conditions
 
   // ✅ Filter by year if provided
-  if (year) {
+  if (year !== undefined) {
     matchStage.date = {
-      $gte: new Date(`${year}-01-01T00:00:00.000Z`), // Start of the year
-      $lt: new Date(`${year + 1}-01-01T00:00:00.000Z`), // Start of next year
+      $gte: new Date(`${year}-01-01T00:00:00.000Z`),
+      $lt: new Date(`${year + 1}-01-01T00:00:00.000Z`),
     };
   }
 
-  // ✅ Filter by months if provided
-  if (Array.isArray(months) && months.length > 0) {
-    matchStage.$expr = { $in: [{ $month: "$date" }, months] };
+  // ✅ Filter by month if provided
+  if (month !== undefined) {
+    matchStage.$expr = { $eq: [{ $month: "$date" }, month] };
   }
 
-  // ✅ Insert the '$match' stage at the beginning **only if filters exist**
+  // ✅ Insert '$match' only if filters exist
   if (Object.keys(matchStage).length > 0) {
     this.pipeline().unshift({ $match: matchStage });
   }
 
   next();
 });
+
 
 const Client =
   mongoose.models.client_models ||
@@ -177,7 +178,7 @@ app.post("/api/transcripts/:id/status", async (req, res) => {
   }
 });
 
-const getTraffic = async (year = null, months = []) => {
+const getTraffic = async (year , month) => {
   return await Enquiry.aggregate(
     [
       {
@@ -204,7 +205,7 @@ const getTraffic = async (year = null, months = []) => {
         },
       },
     ],
-    { pipelineOptions: { year, months } }
+    { pipelineOptions: { year, month } }
   );
 };
 
@@ -280,10 +281,10 @@ app.get("/enquiry-dispersion-per-hour", async (req, res) => {
 });
 
 app.get("/traffic-each-day", async (req, res) => {
-  const year = 2025;
-  const months = [1, 2, 3]; // Jan, Feb, Mar
+  const year = req.query.year ? parseInt(req.query.year) : undefined;
+  const month = req.query.month ? parseInt(req.query.month) : undefined;
 
-  const trafficData = await getTraffic(year, months);
+  const trafficData = await getTraffic(year, month);
   console.log(trafficData);
   res.json({
     data: trafficData,
@@ -296,6 +297,28 @@ app.get("/enquiry-per-product", async (req, res) => {
   res.json({
     data: enquiryPerProduct,
   });
+});
+
+app.get('/api/enquiries', async (req, res) => {
+  const year = req.query.year ? parseInt(req.query.year) : undefined;
+  const month = req.query.month ? parseInt(req.query.month) : undefined;
+  try {
+      const enquiries = await Enquiry.aggregate([
+          {
+              $group: {
+                  _id: { $substr: ["$date", 0, 10] }, // Group by the date part of the 'date' field
+                  count: { $sum: 1 }, // Count the number of enquiries per day
+              },
+          },
+          { $sort: { _id: 1 } }, // Sort by date
+      ],
+      { pipelineOptions: { year, month } 
+    });
+
+  res.json(enquiries.map(entry => ({ date: entry._id, enquiries: entry.count })));
+} catch (error) {
+  res.status(500).send(error.message);
+}
 });
 
 app.listen(3000, () => {
