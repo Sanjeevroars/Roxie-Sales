@@ -52,6 +52,33 @@ const transcriptSchema = new mongoose.Schema({
   transcript: [String],
 });
 
+enquirySchema.pre("aggregate", function (next) {
+  // Retrieve pipeline options (default to empty object if not set)
+  const { year, months } = this.options.pipelineOptions || {};
+
+  const matchStage = {}; // Initialize match conditions
+
+  // ✅ Filter by year if provided
+  if (year) {
+    matchStage.date = {
+      $gte: new Date(`${year}-01-01T00:00:00.000Z`), // Start of the year
+      $lt: new Date(`${year + 1}-01-01T00:00:00.000Z`), // Start of next year
+    };
+  }
+
+  // ✅ Filter by months if provided
+  if (Array.isArray(months) && months.length > 0) {
+    matchStage.$expr = { $in: [{ $month: "$date" }, months] };
+  }
+
+  // ✅ Insert the '$match' stage at the beginning **only if filters exist**
+  if (Object.keys(matchStage).length > 0) {
+    this.pipeline().unshift({ $match: matchStage });
+  }
+
+  next();
+});
+
 const Client =
   mongoose.models.client_models ||
   mongoose.model("client_models", clientSchema);
@@ -150,32 +177,35 @@ app.post("/api/transcripts/:id/status", async (req, res) => {
   }
 });
 
-const getTraffic = async () => {
-  return await Enquiry.aggregate([
-    {
-      $group: {
-        _id: {
-          dateTrunc: { $dateTrunc: { date: "$date", unit: "day" } },
+const getTraffic = async (year = null, months = []) => {
+  return await Enquiry.aggregate(
+    [
+      {
+        $group: {
+          _id: {
+            dateTrunc: { $dateTrunc: { date: "$date", unit: "day" } },
+          },
+          count: { $sum: 1 },
         },
-        count: { $sum: 1 },
       },
-    },
-    {
-      $sort: { "_id.dateTrunc": 1 }, // Sort by actual Date field
-    },
+      {
+        $sort: { "_id.dateTrunc": 1 }, // Sort by actual Date field
+      },
 
-    {
-      $setWindowFields: {
-        sortBy: { "_id.dateTrunc": 1 }, // Ensure this is a Date type
-        output: {
-          movingAvg: {
-            $avg: "$count",
-            window: { range: [-6, 0], unit: "day" },
+      {
+        $setWindowFields: {
+          sortBy: { "_id.dateTrunc": 1 }, // Ensure this is a Date type
+          output: {
+            movingAvg: {
+              $avg: "$count",
+              window: { range: [-6, 0], unit: "day" },
+            },
           },
         },
       },
-    },
-  ]);
+    ],
+    { pipelineOptions: { year, months } }
+  );
 };
 
 const getEnquiryForEachProduct = async () => {
@@ -250,7 +280,10 @@ app.get("/enquiry-dispersion-per-hour", async (req, res) => {
 });
 
 app.get("/traffic-each-day", async (req, res) => {
-  const trafficData = await getTraffic();
+  const year = 2025;
+  const months = [1, 2, 3]; // Jan, Feb, Mar
+
+  const trafficData = await getTraffic(year, months);
   console.log(trafficData);
   res.json({
     data: trafficData,
