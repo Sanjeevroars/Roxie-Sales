@@ -15,10 +15,18 @@ app.get("/run-exe", (req, res) => {
     "hp",
     "Downloads",
     "roxie",
-    "RoxieApp.exe"
+    "dell",
+    "qt_output.exe"
   );
 
-  const exeDirectory = path.join("C:", "Users", "hp", "Downloads", "roxie");
+  const exeDirectory = path.join(
+    "C:",
+    "Users",
+    "hp",
+    "Downloads",
+    "roxie",
+    "dell"
+  );
 
   const exeProcess = spawn(exePath, [], {
     cwd: exeDirectory,

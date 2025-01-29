@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "6756dab8c94f5cc40cb628dc"
+  },
+  "firstname": "John",
+  "lastname": "Doe",
+  "email": "john.doe@example.com",
+  "username": "john123",
+  "password": "$2a$10$DPw1SdMFASLgwrFRU2Rvf.qrQ9fOpxBHvs/hDsS9LgZNJyNu269pe"
+},
+{
+  "_id": {
+    "$oid": "6756dab8c94f5cc40cb628dd"
+  },
+  "firstname": "Jane",
+  "lastname": "Smith",
+  "email": "jane.smith@example.com",
+  "username": "jane_smith",
+  "password": "$2a$10$DPw1SdMFASLgwrFRU2Rvf.qrQ9fOpxBHvs/hDsS9LgZNJyNu269pe"
+},
+{
+  "_id": {
+    "$oid": "6756dab8c94f5cc40cb628de"
+  },
+  "firstname": "David",
+  "lastname": "Lee",
+  "email": "david.lee@example.com",
+  "username": "david_lee",
+  "password": "$2a$10$DPw1SdMFASLgwrFRU2Rvf.qrQ9fOpxBHvs/hDsS9LgZNJyNu269pe"
+},
+{
+  "_id": {
+    "$oid": "6756dab8c94f5cc40cb628df"
+  },
+  "firstname": "Emily",
+  "lastname": "Johnson",
+  "email": "emily.johnson@example.com",
+  "username": "emilyj",
+  "password": "$2a$10$DPw1SdMFASLgwrFRU2Rvf.qrQ9fOpxBHvs/hDsS9LgZNJyNu269pe"
+},
+{
+  "_id": {
+    "$oid": "6756dab8c94f5cc40cb628e0"
+  },
+  "firstname": "Michael",
+  "lastname": "Brown",
+  "email": "michael.brown@example.com",
+  "username": "michael_b",
+  "password": "$2a$10$DPw1SdMFASLgwrFRU2Rvf.qrQ9fOpxBHvs/hDsS9LgZNJyNu269pehashed_password_5"
+},
+{
+  "_id": {
+    "$oid": "6756db92999dd83b4e6d1ee1"
+  },
+  "firstname": "aJohn",
+  "lastname": "Doea",
+  "email": "ajohn.doea@example.com",
+  "username": "ajohndoea",
+  "password": "$2a$10$DPw1SdMFASLgwrFRU2Rvf.qrQ9fOpxBHvs/hDsS9LgZNJyNu269pe",
+  "__v": 0
+}]
