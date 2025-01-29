@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-// import logo from "../assets/logor.png";
+
+// Register the plugin with GSAP
+gsap.registerPlugin(ScrollToPlugin);
 
 const Navbar = () => {
   useEffect(() => {
@@ -21,6 +24,15 @@ const Navbar = () => {
     );
   }, []);
 
+  // Smooth scroll function using GSAP
+  const scrollToSection = (sectionId) => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: sectionId, offsetY: 50 },
+      ease: "power2.out",
+    });
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -29,16 +41,41 @@ const Navbar = () => {
       <div className="nav-buttons">
         <ul className="nav-links">
           <li>
-            <a href="#home">Home</a>
+            <a
+              href="#home"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#home");
+              }}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#roxie">Roxie</a>
+            <a
+              href="#roxie"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#roxie");
+              }}
+            >
+              Roxie
+            </a>
           </li>
           <li>
-            <Link to="/transcripts">Transcript</Link>
+            <Link to="/transcripts" target="_blank" rel="noopener noreferrer">
+              Transcript
+            </Link>
           </li>
           <li>
-            <a href="#dashboard" id="dashboard-link">
+            <a
+              href="#dashboard"
+              id="dashboard-link"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#dashboard");
+              }}
+            >
               Dashboard
             </a>
           </li>
