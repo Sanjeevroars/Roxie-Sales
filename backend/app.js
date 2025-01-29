@@ -19,8 +19,12 @@ const enquirySchema = new mongoose.Schema({
   date: Date,
   interested_model: {
     type: mongoose.Schema.ObjectId,
-    ref: "Client", // Reference to the Client model
+    ref: "Client",
     required: true, // Ensure the field is populated
+  },
+  transcriptId: {
+    type: mongoose.Schema.ObjectId,
+    ref: "Transcript",
   },
   location: String,
   status: {
@@ -73,14 +77,19 @@ app.get("/", (req, res) => {
 
 app.post("/api/end_conversation", async (req, res) => {
   // console.log("ok");
-  const { user_info } = req.body;
+  const { user_info, transcript } = req.body;
   // console.log(user_info);
 
   const { interested_model, ...otherData } = user_info;
   // console.log(interested_model)
   const client = await Client.findOne({ model: interested_model });
   // console.log(client);
-  const updatedData = { ...otherData, interested_model: client._id };
+  const userTranscript = await Transcript.create(req.body);
+  const updatedData = {
+    ...otherData,
+    interested_model: client._id,
+    transcriptId: userTranscript._id,
+  };
 
   const enquiry = await Enquiry.create(updatedData);
   console.log(enquiry);
@@ -115,6 +124,7 @@ app.get("/api/transcripts/:id", async (req, res) => {
     });
   }
 });
+
 const getTraffic = async () => {
   return await Enquiry.aggregate([
     {
@@ -194,6 +204,7 @@ const getEnquiryDispersion = async () => {
     },
   ]);
 };
+
 app.get("/enquiry-dispersion-per-hour", async (req, res) => {
   const enquiryDispersion = await getEnquiryDispersion();
   console.log(enquiryDispersion);
@@ -202,6 +213,7 @@ app.get("/enquiry-dispersion-per-hour", async (req, res) => {
     len: enquiryDispersion.length,
   });
 });
+
 app.get("/traffic-each-day", async (req, res) => {
   const trafficData = await getTraffic();
   console.log(trafficData);
@@ -209,6 +221,7 @@ app.get("/traffic-each-day", async (req, res) => {
     data: trafficData,
   });
 });
+
 app.get("/enquiry-per-product", async (req, res) => {
   const enquiryPerProduct = await getEnquiryForEachProduct();
   console.log(enquiryPerProduct);
@@ -216,6 +229,7 @@ app.get("/enquiry-per-product", async (req, res) => {
     data: enquiryPerProduct,
   });
 });
+
 app.listen(3000, () => {
   console.log(`App running on Port ${PORT}`);
 });
