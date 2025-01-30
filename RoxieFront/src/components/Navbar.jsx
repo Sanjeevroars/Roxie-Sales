@@ -32,11 +32,16 @@ const Navbar = () => {
       ease: "power2.out",
     });
   };
+  const redirectToDashboard = () => {
+    window.location.href = "http://localhost:3014/dashboard";
+  };
 
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="/logor.png" alt="Logo" className="logo-img" />
+        <Link to="/">
+          <img src="/logor.png" alt="Logo" className="logo-img" />
+        </Link>
       </div>
       <div className="nav-buttons">
         <ul className="nav-links">
@@ -73,7 +78,7 @@ const Navbar = () => {
               id="dashboard-link"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection("#dashboard");
+                redirectToDashboard();
               }}
             >
               Dashboard

@@ -5,24 +5,34 @@ import Navbar from "../components/Navbar";
 const Transcripts = () => {
   const [transcripts, setTranscripts] = useState([]);
   const [selectedTranscript, setSelectedTranscript] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [isDataLoaded, setIsDataLoaded] = useState(false);
 
   useEffect(() => {
     const fetchTranscripts = async () => {
       try {
-        console.log("hit");
-        const response = await fetch("http://localhost:3000/api/transcripts");
+        console.log("Fetching data...");
+        const response = await fetch(
+          "https://roxie-backend.onrender.com/api/transcripts"
+        );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
         if (Array.isArray(data) && data.length > 0) {
           setTranscripts(data);
-          setSelectedTranscript(data[0]); // Select first transcript by default
+          setSelectedTranscript(data[0]);
         }
       } catch (error) {
         console.error("Error fetching transcripts:", error);
+      } finally {
+        setIsDataLoaded(true);
       }
     };
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
 
     fetchTranscripts();
   }, []);
@@ -31,10 +41,22 @@ const Transcripts = () => {
     setSelectedTranscript(transcript);
   };
 
+  if (loading || !isDataLoaded) {
+    return (
+      <div style={styles.wrapper}>
+        <Navbar />
+        <div style={styles.container}>
+          <div style={styles.loader}>Loading...</div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={styles.wrapper}>
       <Navbar />
       <div style={styles.container}>
+        {/* Left Pane with Transcripts List */}
         <div className="leftPane" style={styles.leftPane}>
           <h2 style={styles.title}>Transcripts</h2>
           <div style={styles.transcriptsList}>
@@ -55,16 +77,21 @@ const Transcripts = () => {
           </div>
         </div>
 
+        {/* Right Pane with Selected Transcript Details */}
         {selectedTranscript && (
           <div style={styles.rightPane}>
-            <h3>{selectedTranscript.name}</h3>
-            <p>
-              <strong>Description:</strong> {selectedTranscript.user_info.name}
-            </p>
+            <h3 style={styles.selectedTranscriptTitle}>
+              {selectedTranscript.name}
+            </h3>
             {Array.isArray(selectedTranscript.transcript) ? (
-              selectedTranscript.transcript.map((line, index) => (
-                <li key={index}>{line}</li>
-              ))
+              selectedTranscript.transcript.map((line, index) => {
+                const [label, content] = line.split(":");
+                return (
+                  <div key={index} style={styles.transcriptLine}>
+                    <strong>{label}:</strong> {content}
+                  </div>
+                );
+              })
             ) : (
               <p>No transcript content available.</p>
             )}
@@ -106,9 +133,9 @@ const styles = {
   },
   title: {
     color: "white",
-    fontSize: "24px",
+    fontSize: "30px", // Increased font size
     marginBottom: "20px",
-    textAlign: "center",
+    textAlign: "center", // Center align the title
   },
   transcriptsList: {
     display: "flex",
@@ -143,6 +170,22 @@ const styles = {
   loadingText: {
     color: "white",
     textAlign: "center",
+  },
+  selectedTranscriptTitle: {
+    fontSize: "24px",
+    color: "white",
+    marginBottom: "20px",
+    textAlign: "center", // Center align the title
+  },
+  transcriptLine: {
+    marginBottom: "10px",
+    color: "white",
+    textAlign: "left", // Left align the text
+  },
+  loader: {
+    color: "white",
+    textAlign: "center",
+    fontSize: "20px",
   },
 };
 
